@@ -2,7 +2,13 @@ GEM
   remote: https://rubygems.org/
   specs:
     addressable (2.4.0)
+    autoprefixer-rails (6.5.1.1)
+      execjs
+    bootstrap-sass (3.3.7)
+      autoprefixer-rails (>= 5.2.1)
+      sass (>= 3.3.4)
     colorator (1.1.0)
+    execjs (2.7.0)
     ffi (1.9.14)
     forwardable-extended (2.6.0)
     jekyll (3.3.0)
@@ -37,14 +43,18 @@ GEM
     rouge (1.11.1)
     safe_yaml (1.0.4)
     sass (3.4.22)
+    uglifier (3.0.3)
+      execjs (>= 0.3.0, < 3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-sass
   jekyll (= 3.3.0)
   jekyll-feed (~> 0.6)
   minima (~> 2.0)
+  uglifier
 
 RUBY VERSION
    ruby 2.2.5p319
