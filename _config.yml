@@ -1,40 +1,82 @@
 # Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing these this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: UCode
-email: soporte@ucode.es
-description: > # this means to ignore newlines until "baseurl:"
-  Descripcion de UCode
-#  Write an awesome description for your new site here. You can edit this
-#  line in _config.yml. It will appear in your document head meta (for
-#  Google search results) and in your feed.xml site description.
-encoding: UTF-8
-port: 80
-host: 0.0.0.0
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: UCodeES
-#github_username: jekyll
+# Website settings
+title: "uCode"
+description: "uCode hackathon in EINA, Zaragoza"
+keywords: "uCode,hack,hackathon,EINA,Zaragoza"
+baseurl: "/"
+url: "http://www.ucode.es"
+logo_small: "static/img/logo/ucode_abr.png"
+logo: "static/img/logo/ucode.png"
+
+# author
+author:
+  name: 'Marcos Canales Mayo'
+  first_name: 'Marcos'
+  last_name: 'Canales Mayo'
+  email: 'soporte@ucode.es'
+  facebook_username: ''
+  github_username: 'MarcosCM'
+  head_img: 'static/img/landing/Marcos.jpg'
+  desc: 'Descripción'
+  
+about:
+  email: 'soporte@ucode.es'
+
+# sections
+sections:
+  - id: 'sponsors'
+    i18n: 'nav.sponsors'
+    name: 'Sponsors'
+    tpl: 'sponsors.html'
+    css: ''
+
+  - id: 'timeline'
+    i18n: 'nav.timeline'
+    name: 'Timeline'
+    tpl: 'timeline.html'
+    css: 'timeline'
+
+  - id: 'collaborators'
+    i18n: 'nav.collaborators'
+    name: 'Collaborators'
+    tpl: 'collaborators.html'
+    css: ''
+
+  - id: 'organizers'
+    i18n: 'nav.organizers'
+    name: 'Organizers'
+    tpl: 'organizers.html'
+    css: ''
+
+  - id: 'blog'
+    i18n: 'nav.blog'
+    name: 'Blog'
+    tpl: 'blog.html'
+    css: 'testimonials navy-section'
+
+  - id: 'where'
+    i18n: 'nav.where'
+    name: 'Where'
+    tpl: 'where.html'
+    css: ''
+
+# localization
+languages:
+  - locale: 'es'
+    flag: 'static/img/flags/Spain.png'
+  - locale: 'en'
+    flag: 'static/img/flags/United-Kingdom.png'
+
+# blog img path
+img_path: 'http://www.ucode.es/static/img/blog'
 
 # Build settings
+encoding: "utf-8"
+
+# other settings
+highlighter: rouge
 markdown: kramdown
-theme: minima
-gems:
-  - jekyll-feed
-  - bootstrap-sass
-  - uglifier
-exclude:
-  - Gemfile
-  - Gemfile.lock
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge

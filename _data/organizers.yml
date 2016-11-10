@@ -1,0 +1,17 @@
+- name: 'Jorge Cáncer Gil'
+  i18n: 'jorgecancergil'
+  social:
+    twitter: 'https://twitter.com/jorgcan'
+    linkedin: 'https://es.linkedin.com/in/jorge-cáncer-gil-93158797'
+    github: 'https://github.com/jorcox'
+  img: 'static/img/landing/jorgecancergil.jpg'
+  desc: 'Fundador y Organizador'
+
+- name: 'Marcos Canales Mayo'
+  i18n: 'marcoscanalesmayo'
+  social:
+    twitter: 'https://twitter.com/MarketesCM'
+    linkedin: 'https://es.linkedin.com/in/marcos-canales-mayo-b5a679a5'
+    github: 'https://github.com/MarcosCM'
+  img: 'static/img/landing/marcoscanalesmayo.jpg'
+  desc: 'Fundador y Organizador'
