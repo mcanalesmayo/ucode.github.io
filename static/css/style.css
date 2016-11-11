@@ -6571,6 +6571,10 @@ body.landing-page {
   color: #668cff;
   font-size: 13px;
 }
+.landing-page section #about p {
+  color: #668cff;
+  font-size: 15px;
+}
 .landing-page address {
   font-size: 13px;
 }
