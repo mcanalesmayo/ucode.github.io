@@ -24,31 +24,31 @@ about:
 sections:
   - id: 'about'
     i18n: 'nav.about'
-    name: 'About'
+    name: 'Qué es uCode'
     tpl: 'about.html'
     css: ''
 
   - id: 'sponsors'
     i18n: 'nav.sponsors'
-    name: 'Sponsors'
+    name: 'Patrocinadores'
     tpl: 'sponsors.html'
     css: ''
 
   - id: 'timeline'
     i18n: 'nav.timeline'
-    name: 'Timeline'
+    name: 'Horario'
     tpl: 'timeline.html'
     css: 'timeline'
 
   - id: 'collaborators'
     i18n: 'nav.collaborators'
-    name: 'Collaborators'
+    name: 'Colaboradores'
     tpl: 'collaborators.html'
     css: ''
 
   - id: 'organizers'
     i18n: 'nav.organizers'
-    name: 'Organizers'
+    name: 'Organizadores'
     tpl: 'organizers.html'
     css: ''
 
@@ -60,7 +60,7 @@ sections:
 
   - id: 'where'
     i18n: 'nav.where'
-    name: 'Where'
+    name: 'Dónde'
     tpl: 'where.html'
     css: ''
 
