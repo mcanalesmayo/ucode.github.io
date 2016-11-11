@@ -10,7 +10,7 @@
   place:
     detail: 'Hall del Edificio Betancourt'
     i18n: 'betancourt_hall'
-  icon: 'fa-plus-square'
+  icon: ' fa-check-square-o'
 
 - name:
     detail: 'Ceremonia de apertura'
@@ -24,7 +24,7 @@
   place:
     detail: 'Salón de Actos'
     i18n: 'conference_room'
-  icon: 'fa-gamepad'
+  icon: 'fa-star'
 
 - name:
     detail: 'Cena'
