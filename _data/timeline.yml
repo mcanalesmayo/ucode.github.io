@@ -1,55 +1,153 @@
 - name:
-    detail: Nextcode
-    i18n: nextcode
+    detail: 'Check-In'
+    i18n: 'checkin'
   desc:
-    detail: Now I am in Nextcode and develop website with Python code for genetic analysis.
-    i18n: nextcode_des
+    detail: 'Comienzo del check-in y preparación para la hackathon'
+    i18n: 'checkin_description'
   date:
-    detail: Apr. 2016
-    i18n: nextcode_date
-  job:
-    detail: Python Developer
-    i18n: nextcode_job
-  icon: fa-plus-square
+    detail: 'Viernes 19:00'
+    i18n: 'checkin_date'
+  place:
+    detail: 'Hall del Edificio Betancourt'
+    i18n: 'betancourt_hall'
+  icon: 'fa-plus-square'
 
 - name:
-    detail: Netease Game
-    i18n: netease
+    detail: 'Ceremonia de apertura'
+    i18n: 'opening_ceremony'
   desc:
-    detail: In Netease game, I learned game service system and use Python code for ops.
-    i18n: netease_des
+    detail: 'Presentación de la hackathon'
+    i18n: 'opening_ceremony_description'
   date:
-    detail: Jun. 2015
-    i18n: nextcode_date
-  job:
-    detail: Dev Ops
-    i18n: netease_job
-  icon: fa-gamepad
+    detail: 'Viernes 20:00'
+    i18n: 'opening_ceremony_date'
+  place:
+    detail: 'Salón de Actos'
+    i18n: 'conference_room'
+  icon: 'fa-gamepad'
 
 - name:
-    detail: Ucloud
-    i18n: ucloud
+    detail: 'Cena'
+    i18n: 'dinner'
   desc:
-    detail: In ucloud, I started to deal with servers and Linux system and use shell scripts to manage massive server.
-    i18n: ucloud_des
+    detail: 'Cena en el hall'
+    i18n: 'dinner_description'
   date:
-    detail: Sep. 2013
-    i18n: ucloud_date
-  job:
-    detail: Dev Ops
-    i18n: ucloud_job
-  icon: fa-cloud
+    detail: 'Viernes 21:00'
+    i18n: 'dinner_date_day1'
+  place:
+    detail: 'Hall'
+    i18n: 'hall'
+  icon: 'fa-cutlery'
 
 - name:
-    detail: Graduation
-    i18n: college
+    detail: 'Comienzo'
+    i18n: 'hackathon_start'
   desc:
-    detail: At July 2013,I graduated from college and started my IT technology tour.
-    i18n: college_des
+    detail: 'Comienzo de la hackathon'
+    i18n: 'hackathon_start_description'
   date:
-    detail: Jul. 2013
-    i18n: college_date
-  job:
-    detail: Student
-    i18n: college_job
-  icon: fa-book
+    detail: 'Viernes 22:00'
+    i18n: 'hackathon_start_date'
+  place:
+    detail: 'Sala Tomás Pollán'
+    i18n: 'tomas_pollan_room'
+  icon: 'fa-hourglass-start'
+
+- name:
+    detail: 'Desayuno'
+    i18n: 'breakfast'
+  desc:
+    detail: 'Desayuno en el hall'
+    i18n: 'breakfast_description'
+  date:
+    detail: 'Sábado 08:00'
+    i18n: 'breakfast_date_day2'
+  place:
+    detail: 'Hall'
+    i18n: 'hall'
+  icon: 'fa-coffee'
+
+- name:
+    detail: 'Comida'
+    i18n: 'lunch'
+  desc:
+    detail: 'Comida en el hall'
+    i18n: 'lunch_description'
+  date:
+    detail: 'Sábado 13:30'
+    i18n: 'lunch_date_day2'
+  place:
+    detail: 'Hall'
+    i18n: 'hall'
+  icon: 'fa-cutlery'
+
+- name:
+    detail: 'Cena'
+    i18n: 'dinner'
+  desc:
+    detail: 'Cena en el hall'
+    i18n: 'dinner_description'
+  date:
+    detail: 'Sábado 21:00'
+    i18n: 'dinner_date_day2'
+  place:
+    detail: 'Hall'
+    i18n: 'hall'
+  icon: 'fa-cutlery'
+
+- name:
+    detail: 'Fin del hacking'
+    i18n: 'hackathon_stop'
+  desc:
+    detail: 'Entrega de proyectos'
+    i18n: 'hackathon_stop_description'
+  date:
+    detail: 'Domingo 07:45'
+    i18n: 'hackathon_stop_date'
+  place:
+    detail: 'Sala Tomás Pollán'
+    i18n: 'tomas_pollan_room'
+  icon: 'fa-hourglass-end'
+
+- name:
+    detail: 'Desayuno'
+    i18n: 'breakfast'
+  desc:
+    detail: 'Cena en el hall'
+    i18n: 'breakfast_description'
+  date:
+    detail: 'Domingo 08:00'
+    i18n: 'breakfast_date_day3'
+  place:
+    detail: 'Hall'
+    i18n: 'hall'
+  icon: 'fa-coffee'
+
+- name:
+    detail: 'Deliberación'
+    i18n: 'deliberation'
+  desc:
+    detail: 'Valoración por parte del jurado de los proyectos presentados'
+    i18n: 'deliberation_description'
+  date:
+    detail: 'Domingo 09:00'
+    i18n: 'deliberation_date'
+  place:
+    detail: 'Sala Tomás Pollán'
+    i18n: 'tomas_pollan_room'
+  icon: 'fa-group'
+
+- name:
+    detail: 'Premios'
+    i18n: 'prizes'
+  desc:
+    detail: 'Entrega de premios a los mejores proyectos desarrollados'
+    i18n: 'prizes_description'
+  date:
+    detail: 'Domingo 10:30'
+    i18n: 'prizes_date'
+  place:
+    detail: 'Salón de Actos'
+    i18n: 'conference_room'
+  icon: 'fa-trophy'
