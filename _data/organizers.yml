@@ -18,6 +18,8 @@
 
 - name: 'Marina Túnez Trilla'
   i18n: 'marinatuneztrilla'
+  social:
+    linkedin: 'https://es.linkedin.com/in/marina-túnez-trilla-992238132'
   img: 'static/img/organizers/marinatuneztrilla.jpg'
   desc: 'Diseñadora'
 
