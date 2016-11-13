@@ -1,3 +1,7 @@
+- name: 'Unizar'
+  img: 'static/img/collaborators/unizar.png'
+  link: 'https://www.unizar.es/'
+
 - name: 'EINA'
   img: 'static/img/collaborators/eina.png'
   link: 'https://eina.unizar.es/'

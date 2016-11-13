@@ -1,8 +1,8 @@
-- par:
-    i18n: 'par.a'
-
-- par:
-    i18n: 'par.b'
-
-- par:
-    i18n: 'par.c'
+title: 'Qué es'
+content:
+  - par:
+      i18n: 'a'
+  - par:
+      i18n: 'b'
+  - par:
+      i18n: 'c'

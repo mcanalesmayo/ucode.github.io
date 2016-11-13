@@ -2,13 +2,13 @@
     <div class="row m-b-lg">
         <div class="col-lg-12 text-center">
             <div class="navy-line"></div>
-            <h1><span data-i18n="about.title">Qué es uCode</span></h1>
+            <h1><span data-i18n="about.title">Qué es</span></h1>
         </div>
     </div>
     <div class="row">
         <div class="col-xs-offset-3 col-xs-6 col-sm-6 col-md-6">
-        {% for data in site.data.about %}
-            <p data-i18n="about.{{ data.par.i18n }}"></p>
+        {% for data in site.data.about.content %}
+            <p data-i18n="about.content.par.{{ data.par.i18n }}"></p>
         {% endfor %}
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12"><br></div>

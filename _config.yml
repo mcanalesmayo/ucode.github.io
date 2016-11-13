@@ -28,11 +28,11 @@ sections:
     tpl: 'about.html'
     css: ''
 
-  - id: 'sponsors'
-    i18n: 'nav.sponsors'
-    name: 'Patrocinadores'
-    tpl: 'sponsors.html'
-    css: ''
+#  - id: 'sponsors'
+#    i18n: 'nav.sponsors'
+#    name: 'Patrocinadores'
+#    tpl: 'sponsors.html'
+#    css: ''
 
   - id: 'timeline'
     i18n: 'nav.timeline'
