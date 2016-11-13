@@ -1,0 +1,22 @@
+<div class="container-fluid" id="i18_faq">
+    <div class="row m-b-lg">
+        <div class="col-lg-12 text-center">
+            <div class="navy-line"></div>
+            <h1><span data-i18n="faq.title">F.A.Q.</span></h1>
+        </div>
+    </div>
+    <div class="row">
+        {% for data in site.data.faq.content %}
+        {% assign loopindex = forloop.index | modulo: 3 %}
+        {% if loopindex == 1 %}
+        <div class="col-sm-offset-3 col-sm-3">
+        {% else %}
+        <div class="col-sm-3">
+        {% endif %}
+            <h2 data-i18n="faq.question.{{ data.question.i18n }}.title"></h2>
+            <p data-i18n="faq.question.{{ data.question.i18n }}.answer"></p>
+        </div>
+        {% endfor %}
+        <div class="col-xs-12 col-sm-12 col-md-12"><br></div>
+    </div>
+</div>

@@ -28,6 +28,12 @@ sections:
     tpl: 'about.html'
     css: ''
 
+  - id: 'faq'
+    i18n: 'nav.faq'
+    name: 'F.A.Q.'
+    tpl: 'faq.html'
+    css: ''
+
 #  - id: 'sponsors'
 #    i18n: 'nav.sponsors'
 #    name: 'Patrocinadores'
