@@ -21,12 +21,6 @@
       }
     }
   },
-  "faq": {
-    "question": {
-      "a": {"title": "Pregunta A", "answer": "Respuesta A"},
-      "b": {"title": "Pregunta B", "answer": "Respuesta B"}
-    }
-  },
   "sponsors": {
     "title": "Patrocinadores"
   },
