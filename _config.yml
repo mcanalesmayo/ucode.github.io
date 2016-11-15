@@ -40,11 +40,11 @@ sections:
 #    tpl: 'sponsors.html'
 #    css: ''
 
-  - id: 'timeline'
-    i18n: 'nav.timeline'
-    name: 'Horario'
-    tpl: 'timeline.html'
-    css: 'timeline'
+#  - id: 'timeline'
+#    i18n: 'nav.timeline'
+#    name: 'Horario'
+#    tpl: 'timeline.html'
+#    css: 'timeline'
 
   - id: 'collaborators'
     i18n: 'nav.collaborators'
