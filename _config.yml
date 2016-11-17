@@ -24,7 +24,7 @@ about:
 sections:
   - id: 'about'
     i18n: 'nav.about'
-    name: 'Qué es uCode'
+    name: 'Qué es'
     tpl: 'about.html'
     css: ''
 
