@@ -7,7 +7,12 @@
     </div>
     <div class="row">
         {% for collaborator in site.data.collaborators %}
+        {% assign loopindex = forloop.index %}
+        {% if loopindex == 1 %}
+        <div class="col-sm-offset-2 col-sm-4">
+        {% else %}
         <div class="col-sm-4">
+        {% endif %}
             <a class="img-responsive" href="{{ collaborator.link }}" target="_blank"><img src="{{ collaborator.img | prepend: site.baseurl }}" class="img-responsive" alt=""></a>
         </div>
         {% endfor %}
