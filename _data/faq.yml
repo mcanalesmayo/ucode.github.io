@@ -19,5 +19,40 @@ content:
       title: '¿Quiénes pueden participar?'
       answer: 'Puede participar todo el mundo, aunque se priorizará a los estudiantes por la naturaleza de esta hackathon'
   - question:
+      title: '¿Qué opciones de transporte hay para llegar al evento?'
+      answer: 'Si llegas desde la Estación Delicias te recomendamos usar el transporte público a través de <a href="https://goo.gl/maps/VCg7h8fbXav" target="_blank">esta ruta</a>'
+  - question:
+      title: '¿Dónde puedo aparcar?'
+      answer: 'La Escuela dispone de plazas de parking gratuitas que podrás usar'
+  - question:
+      title: '¿Tengo que traer la acreditación de Eventbrite?'
+      answer: 'Sí, puedes traerla en formato digital o en papel'
+  - question:
+      title: '¿Puedo actualizar mi información de registro?'
+      answer: 'Si, es posible a través de Eventbrite'
+  - question:
+      title: '¿Puedo transferir mi entrada a otra persona?'
+      answer: 'Si deseas ceder tu entrada a otra persona debes editar la información y actualizarla con los datos de ésta'
+  - question:
+      title: '¿Qué ocurre si el nombre de mi acreditación no concuerda con mi nombre real el día del evento?'
+      answer: 'No podrás acceder al evento. Asegúrate de que todos tus datos personales sean correctos'
+  - question:
       title: 'Tengo otra duda...'
       answer: 'Contáctanos a través de twitter (<a href="https://twitter.com/uCodeES" target="_blank">@uCodeES</a>) o mail (<a href="mailto:soporte@ucode.es" target="_blank">soporte@ucode.es</a>)'
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
