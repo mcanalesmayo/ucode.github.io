@@ -87,3 +87,7 @@ markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+
+google:
+  analytics:
+    id: 'UA-87705893-1'
