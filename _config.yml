@@ -46,11 +46,11 @@ sections:
 #    tpl: 'timeline.html'
 #    css: 'timeline'
 
-  - id: 'collaborators'
-    i18n: 'nav.collaborators'
-    name: 'Colaboradores'
-    tpl: 'collaborators.html'
-    css: ''
+#  - id: 'collaborators'
+#    i18n: 'nav.collaborators'
+#    name: 'Colaboradores'
+#    tpl: 'collaborators.html'
+#    css: ''
 
   - id: 'organizers'
     i18n: 'nav.organizers'
