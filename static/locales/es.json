@@ -12,15 +12,6 @@
     "blog": "Blog",
     "where": "Dónde"
   },
-  "about": {
-    "content": {
-      "par" : {
-      "a": "uCode es un hackathon que se celebra en Zaragoza, orientado al público universitario a nivel nacional.",
-      "b": "Durante las 36 horas que dura, equipos de hasta 4 personas resolverán interesantes retos dentro del mundo de las tecnologías.",
-      "c": "El evento está orientado a varias disciplinas, como la Informática, la Electrónica, las Telecomunicaciones, la Ingeniería Industrial, el Diseño, etc."
-      }
-    }
-  },
   "sponsors": {
     "title": "Patrocinadores"
   },
