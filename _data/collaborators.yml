@@ -5,3 +5,7 @@
 - name: 'Tecnara'
   img: 'static/img/collaborators/tecnara.png'
   link: 'http://empresastecnara.es/'
+
+- name: 'Bifi'
+  img: 'static/img/collaborators/bifi.png'
+  link: 'http://bifi.es/'
