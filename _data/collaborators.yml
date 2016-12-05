@@ -9,3 +9,7 @@
 - name: 'Bifi'
   img: 'static/img/collaborators/bifi.png'
   link: 'http://bifi.es/'
+
+- name: 'IDiA'
+  img: 'static/img/collaborators/idia.jpg'
+  link: 'http://idia.es/'

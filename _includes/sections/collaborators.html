@@ -5,16 +5,28 @@
             <h1><span data-i18n="collaborators.title">Colaboradores</span></h1>
         </div>
     </div>
+    {% for collaborator in site.data.collaborators %}
+    {% assign idx = forloop.index %}
+    {% assign idx0 = forloop.index0 %}
+    {% assign loopmod = idx0 | modulo: 3 %}
+    {% assign lastmod = forloop.length | modulo: 3 %}
+    {% if forloop.first == true %}
     <div class="row">
-        {% for collaborator in site.data.collaborators %}
-        {% assign loopindex = forloop.index %}
-        {% if loopindex == 1 %}
-        <div class="col-sm-4">
+    {% elsif loopmod == 0 %}
+    </div><div class="row">
+    {% endif %}
+        {% assign higherthan = forloop.length | minus: lastmod | plus: 1 %}
+        {% if idx == higherthan %}
+        {% assign offsetlm = lastmod | times: 4 %}
+        {% assign offset = 12 | minus: offsetlm | divided_by: 2 %}
+        <div class="col-sm-offset-{{ offset }} col-sm-4">
         {% else %}
         <div class="col-sm-4">
         {% endif %}
             <a class="img-responsive" href="{{ collaborator.link }}" target="_blank"><img src="{{ collaborator.img | prepend: site.baseurl }}" class="img-responsive" alt=""></a>
         </div>
-        {% endfor %}
+    {% if forloop.last == true %}
     </div>
+    {% endif %}
+    {% endfor %}
 </div>
