@@ -1,4 +1,4 @@
-<div class="container" id="i18_sponsors">
+<div class="container" style="padding-bottom: 30px" id="i18_sponsors">
     <div class="row m-b-lg">
         <div class="col-lg-12 text-center">
             <div class="navy-line"></div>
@@ -7,9 +7,28 @@
     </div>
     <div class="row">
         {% for sponsor in site.data.sponsors %}
-        <div class="col-xs-4 col-md-4">
-            <a href="{{ sponsor.link }}" target="_blank"><img src="{{ sponsor.img | prepend: site.baseurl }}" class="img-responsive" alt=""></a>
+        {% assign idx = forloop.index %}
+        {% assign idx0 = forloop.index0 %}
+        {% assign loopmod = idx0 | modulo: 3 %}
+        {% assign lastmod = forloop.length | modulo: 3 %}
+        {% if forloop.first == true %}
+        <div class="row">
+        {% elsif loopmod == 0 %}
+        </div><div class="row">
+        {% endif %}
+            {% assign higherthan = forloop.length | minus: lastmod | plus: 1 %}
+            {% if idx == higherthan %}
+            {% assign offsetlm = lastmod | times: 4 %}
+            {% assign offset = 12 | minus: offsetlm | divided_by: 2 %}
+            <div class="col-sm-offset-{{ offset }} col-sm-4">
+            {% else %}
+            <div class="col-sm-4">
+            {% endif %}
+                <a class="img-responsive" href="{{ sponsor.link }}" target="_blank"><img src="{{ sponsor.img | prepend: site.baseurl }}" class="img-responsive" alt="{{ sponsor.name }}" style="margin-left: auto; margin-right: auto"></a>
+            </div>
+        {% if forloop.last == true %}
         </div>
+        {% endif %}
         {% endfor %}
     </div>
 </div>
