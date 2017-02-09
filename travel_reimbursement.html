@@ -1,92 +1,52 @@
 ---
-layout: default
+layout: null
 title: Travel Reimbursement
 permalink: /travel_reimbursement.html
 ---
 
-<div class="navbar-wrapper">
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Navegar</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#page-top" id="i18_title"><span data-i18n="website.title">{{ site.logo_title }}</span><img src="{{ site.logo_small }}" width="52px" height="52px"/></a>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ site.title }} - Reembolso del viaje</title>
+    <link href="{{"bower_components/bootstrap/dist/css/bootstrap.min.css" | prepend: site.baseurl }}" rel="stylesheet">
+    <link href="{{"bower_components/components-font-awesome/css/font-awesome.min.css"| prepend: site.baseurl }}" rel="stylesheet">
+    <link href="{{"bower_components/animate.css/animate.min.css"| prepend: site.baseurl }}" rel="stylesheet">
+    <link href="{{"static/css/style.css"| prepend: site.baseurl }}" rel="stylesheet">
+</head>
+<body class="gray-bg">
+    <div class="middle-box text-center animated fadeInDown">
+        <div class="container" id="i18_collaborators">
+            <div class="row m-b-lg">
+                <div class="col-lg-12 text-center">
+                    <h1>Beca para reembolsar el viaje</h1>
+                    <h2 class="font-bold">Instrucciones</h2>
+                </div>
             </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right" id="i18_navbar">
-                {% for section in site.sections %}
-                    <li>
-                      <a class="page-scroll" href="#{{ section.id }}">
-                        <span data-i18n="{{ section.i18n }}">{{ section.name }}</span>
-                      </a>
-                    </li>
-                {% endfor %}
+            <div class="row">
+                <div class="col-xs-offset-3 col-xs-6 col-sm-6 col-md-6">
+                Disponemos de un número limitado de becas para el reembolso del viaje, de <strong>hasta 50€</strong>, para participantes que vienen desde fuera de Zaragoza.
 
-                {% for language in site.languages %}
-                  <li>
-                    <a id="set_lang_{{ language.locale }}" class="btn btn-sm set_{{ language.locale }}" data-locale="{{ language.locale }}">
-                      <img src="{{ language.flag | prepend: site.baseurl }}" height="16px" width="16px">
-                    </a>
-                  </li>
-                {% endfor %}
-                </ul>
-            </div>
-        </div>
-    </nav>
-</div>
-<div id="inSlider" class="carousel carousel-fade" data-ride="carousel">
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <div class="container">
-                <div class="carousel-caption">
+                Para solicitar una beca tienes que escribir un correo electrónico a <a href="mailto:soporte@ucode.es?subject=[Solicitud] Reembolso del viaje">soporte@ucode.es</a> con el asunto "[Solicitud] Reembolso del viaje". La solicitud será desestimada si el mensaje no cumple con los requisitos descritos a continuación:
+                - Informa del correo electrónico de la cuenta de PayPal a la que quieres que se te haga el reembolso.
+                - Adjunta documento con el viaje (billetes del transporte) en formato PDF o imagen.
+                - Si eres estudiante adjunta un documento que acredite que estudias fuera de Zaragoza (tarjeta universitaria, matrícula...).
+                - Si no eres estudiante adjunta un documento que acredite que resides fuera de Zaragoza (DNI, Pasaporte o Permiso de Residencia para extranjeros).
+
+                Será necesario que asistas a uCode EINA los días 10, 11 y 12 de marzo de 2017 durante las 36 horas del hackathon para que te sea reembolsado el viaje. El reembolso de los viajes se hará efectivo en fechas posteriores al evento.
+
+                <strong>*IMPORTANTE*</strong>: Las becas son limitadas. Por lo tanto, en caso de que haya más solicitudes que becas, se priorizará aquellas solicitudes realizadas por estudiantes, en orden cronológico.
                 </div>
-                <div class="carousel-image wow zoomIn">
-                    <!-- <img src="static/img/landing/laptop.png" alt="laptop"/> -->
-                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12"><br></div>
             </div>
-            <!-- Set background for slide in css -->
-            <div class="header-back one">
-            	<div style="padding-top: 400px; text-align: center">
-            		<button type="button" class="btn btn-default btn-lg register_link">
-						<span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Inscribirse
-					</button>
-					<button type="button" class="btn btn-default btn-lg newsletter_link">
-						<span class="glyphicon glyphicon-inbox" aria-hidden="true"></span> Newsletters
-					</button>
-            	</div>
+            <div>
+                <a class="btn btn-primary" href="/">Inicio</a>
             </div>
         </div>
     </div>
-</div>
-
-
-  <section id="travel_reimbursement" class="features" style="margin-top: 0px;">
-    <div class="container" id="i18_collaborators">
-        <div class="row m-b-lg">
-            <div class="col-lg-12 text-center">
-                <div class="navy-line"></div>
-                <h1><span data-i18n="about.title">Beca para reembolsar el viaje</span></h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-offset-3 col-xs-6 col-sm-6 col-md-6">
-            Disponemos de un número limitado de becas para el reembolso del viaje, de <strong>hasta 50€</strong>, para participantes que vienen desde fuera de Zaragoza.
-
-            Para solicitar una beca tienes que escribir un correo electrónico a <a href="mailto:soporte@ucode.es?subject=[Solicitud] Reembolso del viaje">soporte@ucode.es</a> con el asunto "[Solicitud] Reembolso del viaje". La solicitud será desestimada si el mensaje no cumple con los requisitos descritos a continuación:
-            - Informa del correo electrónico de la cuenta de PayPal a la que quieres que se te haga el reembolso.
-            - Adjunta documento con el viaje (billetes del transporte) en formato PDF o imagen.
-            - Si eres estudiante adjunta un documento que acredite que estudias fuera de Zaragoza (tarjeta universitaria, matrícula...).
-            - Si no eres estudiante adjunta un documento que acredite que resides fuera de Zaragoza (DNI, Pasaporte o Permiso de Residencia para extranjeros).
-
-            Será necesario que asistas a uCode EINA los días 10, 11 y 12 de marzo de 2017 durante las 36 horas del hackathon para que te sea reembolsado el viaje. El reembolso de los viajes se hará efectivo en fechas posteriores al evento.
-
-            <strong>*IMPORTANTE*</strong>: Las becas son limitadas. Por lo tanto, en caso de que haya más solicitudes que becas, se priorizará aquellas solicitudes realizadas por estudiantes, en orden cronológico.
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-12"><br></div>
-        </div>
-    </div>
-  </section>
+    <!-- Mainly scripts -->
+    <script src="{{"bower_components/jquery/dist/jquery.min.js"| prepend: site.baseurl }}"></script>
+    <script src="{{"bower_components/bootstrap/dist/js/bootstrap.min.js"| prepend: site.baseurl }}"></script>
+</body>
+</html>
