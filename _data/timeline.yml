@@ -7,7 +7,7 @@
         detail: 'Comienzo del check-in'
         i18n: 'checkin_description'
       date:
-        detail: 'Viernes 18:00'
+        detail: ' 18:00'
         i18n: 'checkin_date'
       place:
         detail: 'Hall del Edificio Betancourt'
@@ -21,7 +21,7 @@
         detail: 'Ceremonia de apertura'
         i18n: 'opening_ceremony_description'
       date:
-        detail: 'Viernes 20:00'
+        detail: ' 20:00'
         i18n: 'opening_ceremony_date'
       place:
         detail: 'Salón de Actos'
@@ -35,7 +35,7 @@
         detail: 'Comienzo del hackathon'
         i18n: 'hackathon_start_description'
       date:
-        detail: 'Viernes 21:00'
+        detail: ' 21:00'
         i18n: 'hackathon_start_date'
       place:
         detail: 'Sala Tomás Pollán'
@@ -49,7 +49,7 @@
         detail: 'Cena en el hall'
         i18n: 'dinner_description'
       date:
-        detail: 'Viernes 22:00'
+        detail: ' 22:00'
         i18n: 'dinner_date_day1'
       place:
         detail: 'Hall'
@@ -65,7 +65,7 @@
         detail: 'Desayuno en el hall'
         i18n: 'breakfast_description'
       date:
-        detail: 'Sábado 08:00'
+        detail: ' 08:00'
         i18n: 'breakfast_date_day2'
       place:
         detail: 'Hall'
@@ -79,7 +79,7 @@
         detail: 'Comida en el hall'
         i18n: 'lunch_description'
       date:
-        detail: 'Sábado 14:00'
+        detail: ' 14:00'
         i18n: 'lunch_date_day2'
       place:
         detail: 'Hall'
@@ -93,7 +93,7 @@
         detail: 'Cena en el hall'
         i18n: 'dinner_description'
       date:
-        detail: 'Sábado 21:00'
+        detail: ' 21:00'
         i18n: 'dinner_date_day2'
       place:
         detail: 'Hall'
@@ -109,7 +109,7 @@
         detail: 'Desayuno en el hall'
         i18n: 'breakfast_description'
       date:
-        detail: 'Domingo 08:00'
+        detail: ' 08:00'
         i18n: 'breakfast_date_day2'
       place:
         detail: 'Hall'
@@ -123,7 +123,7 @@
         detail: 'Entrega de proyectos'
         i18n: 'hackathon_stop_description'
       date:
-        detail: 'Domingo 09:00'
+        detail: ' 09:00'
         i18n: 'hackathon_stop_date'
       place:
         detail: 'Sala Tomás Pollán'
@@ -137,7 +137,7 @@
         detail: 'Valoración por el jurado'
         i18n: 'deliberation_description'
       date:
-        detail: 'Domingo 09:30'
+        detail: ' 09:30'
         i18n: 'deliberation_date'
       place:
         detail: 'Sala Tomás Pollán'
@@ -151,7 +151,7 @@
         detail: 'Entrega de premios'
         i18n: 'prizes_description'
       date:
-        detail: 'Domingo 12:00'
+        detail: ' 12:00'
         i18n: 'prizes_date'
       place:
         detail: 'Salón de Actos'
@@ -165,7 +165,7 @@
         detail: 'Ceremonia de clausura'
         i18n: 'closing_ceremony_description'
       date:
-        detail: 'Domingo 13:00'
+        detail: ' 13:00'
         i18n: 'closing_ceremony_date'
       place:
         detail: 'Salón de Actos'
@@ -179,7 +179,7 @@
         detail: 'Paellada'
         i18n: 'final_lunch_description'
       date:
-        detail: 'Sábado 14:00'
+        detail: ' 14:00'
         i18n: 'final_lunch_date_day2'
       place:
         detail: 'Hall'
