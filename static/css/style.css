@@ -2785,7 +2785,7 @@ a.forum-item-title:hover {
   .center-orientation .vertical-timeline-content {
     margin-left: 0;
     padding: 0 0 3em;
-    width: 45%;
+    width: 40%;
   }
   .center-orientation .vertical-timeline-content::before {
     top: 24px;
@@ -2799,7 +2799,7 @@ a.forum-item-title:hover {
   .center-orientation .vertical-timeline-content .vertical-date {
     position: absolute;
     width: 100%;
-    left: 122%;
+    left: 130%;
     top: 2px;
     font-size: 14px;
   }
@@ -2818,7 +2818,7 @@ a.forum-item-title:hover {
   }
   .center-orientation .vertical-timeline-block .vertical-timeline-content .vertical-date {
     left: auto;
-    right: 122%;
+    right: 130%;
     text-align: right;
   }
   .center-orientation .cssanimations .vertical-timeline-content.is-hidden {

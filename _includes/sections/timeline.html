@@ -8,7 +8,7 @@
     <div class="row features-block">
     {% for day in site.data.timeline %}
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-        	<h2>{{ day.name }}</h2>
+        	<h2 style="text-align: center">{{ day.name }}</h2>
             <div id="vertical-timeline" class="vertical-container light-timeline center-orientation">
             	{% for milestone in day.milestones %}
                 <div class="vertical-timeline-block">
