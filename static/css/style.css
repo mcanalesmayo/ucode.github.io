@@ -7350,3 +7350,7 @@ body.rtls.top-navigation .footer.fixed {
 .rtls #right-sidebar.sidebar-open {
   left: 0;
 }
+
+body#i18_challenges p {
+  font-size: 18px;
+}
