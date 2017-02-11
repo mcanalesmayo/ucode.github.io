@@ -7,9 +7,9 @@
     </div>
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
-        <div style="text-align: right" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <div style="text-align: center" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div class="btn-group">
-                <button class="btn btn-info btn-lg dropdown-toggle" style="text-align: center" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span id="challenge_chooser">Escoge un reto</span> <span class="caret"></span></button>
+                <button class="btn btn-primary btn-lg dropdown-toggle" style="text-align: center" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span id="challenge_chooser">Escoge un reto</span> <span class="caret"></span></button>
                 <ul class="dropdown-menu">
                 {% for challenge in site.data.challenges %}
                     <li><a href="#" id="{{ challenge.id }}">{{ challenge.sponsor }}</a></li>
@@ -17,15 +17,17 @@
                 </ul>
             </div>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="visibility: hidden" id="challenge_container">
-            <div class="row">
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="display: none" id="challenge_container">
+            <div class="row" style="text-align: center">
                 <h2>Pista</h2>
-                <p id="challenge_content"></p>
+                <p style="font-size: 16px" id="challenge_content"></p>
             </div>
             <div class="row"><br/></div>
-            <div class="row">
+            <div class="row" style="text-align: center">
                 <h2>Premios</h2>
-                <p id="challenge_prizes"></p>
+                <p style="font-size: 16px" id="challenge_prizes"></p>
         </div>
     </div>
 </div>
@@ -34,13 +36,18 @@
         var btn_sel = $('#challenge_chooser');
         var chlg_content_sel = $('#challenge_content');
         var chlg_prizes_sel = $('#challenge_prizes');
-        var chlg_container = document.getElementById('challenge_container');
+        var chlg_container = $('#challenge_container');
+        challenge_container_hidden = 1;
         {% for challenge in site.data.challenges %}
         $('#{{ challenge.id }}').click(function(){
             chlg_content_sel.text('{{ challenge.content }}');
             chlg_prizes_sel.text('{{ challenge.prizes }}');
             btn_sel.text('{{ challenge.sponsor }}');
-            chlg_container.style.visibility = "visible";
+            if (chlg_container_hidden){
+                chlg_container_hidden = 0;
+                chlg_container.show();
+            }
+            return false;
         });
         {% endfor %}
     });
