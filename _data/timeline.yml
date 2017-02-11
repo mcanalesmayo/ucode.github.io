@@ -176,12 +176,12 @@
         detail: 'Comida'
         i18n: 'final_lunch'
       desc:
-        detail: 'Paellada'
+        detail: 'Paella gigante'
         i18n: 'final_lunch_description'
       date:
         detail: ' 14:00'
         i18n: 'final_lunch_date_day2'
       place:
-        detail: 'Hall'
-        i18n: 'hall'
+        detail: 'Plaza de las Ingenierías'
+        i18n: 'engineerings_square'
       icon: 'fa-cutlery'
