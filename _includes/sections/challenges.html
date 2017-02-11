@@ -18,6 +18,7 @@
             </div>
         </div>
     </div>
+    <div class="row"><br/></div>
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="display: none" id="challenge_container">
             <div class="row" style="text-align: center">
@@ -39,7 +40,7 @@
         var chlg_container = $('#challenge_container');
         chlg_container_hidden = 1;
         {% for challenge in site.data.challenges %}
-        $('#{{ challenge.id }}').click(function(){
+        $('#{{ challenge.id }}').click(function(e){
             chlg_content_sel.text('{{ challenge.content }}');
             chlg_prizes_sel.text('{{ challenge.prizes }}');
             btn_sel.text('{{ challenge.sponsor }}');
@@ -47,6 +48,7 @@
                 chlg_container_hidden = 0;
                 chlg_container.show();
             }
+            e.preventDefault();
         });
         {% endfor %}
     });
