@@ -44,7 +44,7 @@ sections:
   - id: 'challenges'
     i18n: 'nav.challenges'
     name: 'Retos'
-    tpl: challenges.html'
+    tpl: 'challenges.html'
     css: ''
 
 #  - id: 'timeline'
