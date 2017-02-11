@@ -31,7 +31,7 @@
 </div>
 <script type="text/javascript">
     $(document).ready(function(){
-        var btn_sel = $('#challenge_choser');
+        var btn_sel = $('#challenge_chooser');
         var chlg_content_sel = $('#challenge_content');
         var chlg_prizes_sel = $('#challenge_prizes');
         var chlg_container = document.getElementById('challenge_container');
@@ -42,10 +42,10 @@
         {% endfor %}
         for (var i = 0; i < challenges.length; i++) {
             console.log(challenges[i]);
-            $('#'+challenges[i]['id']).click(function(){
-                btn_sel.text(challenges[i]['sponsor']);
-                chlg_content_sel.text(challenges[i]['content']);
-                chlg_prizes_sel.text(challenges[i]['prizes']);
+            $('#'+challenges[i].id).click(function(){
+                chlg_content_sel.text(challenges[i].content);
+                chlg_prizes_sel.text(challenges[i].prizes);
+                btn_sel.text(challenges[i].sponsor);
                 chlg_container.style.visibility = "visible";
             });
         }
