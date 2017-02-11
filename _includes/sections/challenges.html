@@ -37,7 +37,7 @@
         var chlg_content_sel = $('#challenge_content');
         var chlg_prizes_sel = $('#challenge_prizes');
         var chlg_container = $('#challenge_container');
-        challenge_container_hidden = 1;
+        chlg_container_hidden = 1;
         {% for challenge in site.data.challenges %}
         $('#{{ challenge.id }}').click(function(){
             chlg_content_sel.text('{{ challenge.content }}');
