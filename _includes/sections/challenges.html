@@ -41,7 +41,7 @@
         challenges[{{ loopindex }}] = {'id': '{{ challenge.id }}', 'sponsored_by': '{{ challenge.sponsored_by }}', 'content': '{{ challenge.content }}', 'prizes': '{{ challenge.prizes}}'};
         {% endfor %};
         for (var i = 0; i < challenges.length; i++) {
-            $('#'+challenges[i]).click(function(){
+            $('#'+challenges[i]['id']).click(function(){
                 btn_sel.text(challenges[i]['sponsored_by']);
                 chlg_content_sel.text(challenges[i]['content']);
                 chlg_prizes_sel.text(challenges[i]['prizes']);
