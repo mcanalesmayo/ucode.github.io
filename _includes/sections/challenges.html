@@ -12,7 +12,7 @@
                 <button class="btn btn-info btn-lg dropdown-toggle" style="text-align: center" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span id="challenge_chooser">Escoge un reto</span> <span class="caret"></span></button>
                 <ul class="dropdown-menu">
                 {% for challenge in site.data.challenges %}
-                    <li><a href="#" id="{{ challenge.id }}">{{ challenge.sponsored_by }}</a></li>
+                    <li><a href="#" id="{{ challenge.id }}">{{ challenge.sponsor }}</a></li>
                 {% endfor %}
                 </ul>
             </div>
@@ -38,12 +38,12 @@
         var challenges = [];
         {% for challenge in site.data.challenges %}
         {% assign loopindex = forloop.index0 %}
-        challenges[{{ loopindex }}] = {'id': '{{ challenge.id }}', 'sponsored_by': '{{ challenge.sponsored_by }}', 'content': '{{ challenge.content }}', 'prizes': '{{ challenge.prizes}}'};
+        challenges[{{ loopindex }}] = {'id': '{{ challenge.id }}', 'sponsor': '{{ challenge.sponsor }}', 'content': '{{ challenge.content }}', 'prizes': '{{ challenge.prizes}}'};
         {% endfor %}
         for (var i = 0; i < challenges.length; i++) {
             console.log(challenges[i]);
             $('#'+challenges[i]['id']).click(function(){
-                btn_sel.text(challenges[i]['sponsored_by']);
+                btn_sel.text(challenges[i]['sponsor']);
                 chlg_content_sel.text(challenges[i]['content']);
                 chlg_prizes_sel.text(challenges[i]['prizes']);
                 chlg_container.style.visibility = "visible";
