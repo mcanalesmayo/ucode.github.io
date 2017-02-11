@@ -1,0 +1,8 @@
+- id: 'adidas_group'
+  sponsored_by: 'Grupo Adidas'
+  content: 'El reto del Grupo Adidas combina lo mejor de la marca con las últimas tendencias IT como Machine Learning, Realidad Virtual...'
+  prizes: 'No podemos más que deciros que os dejarán boquiabiertos'
+- id: 'hiberus'
+  sponsored_by: 'Hiberus'
+  content: 'La temática del reto Hiberus será la Realidad Aumentada'
+  prizes: 'Por determinar'

@@ -41,6 +41,12 @@ sections:
     tpl: 'sponsors.html'
     css: ''
 
+  - id: 'challenges'
+    i18n: 'nav.challenges'
+    name: 'Retos'
+    tpl: challenges.html'
+    css: ''
+
 #  - id: 'timeline'
 #    i18n: 'nav.timeline'
 #    name: 'Horario'
