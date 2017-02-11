@@ -37,7 +37,7 @@
         var chlg_container = document.getElementById('challenge_container');
         var challenges = [];
         {% for challenge in site.data.challenges %}
-        {% assign loopindex = forloop.index %}
+        {% assign loopindex = forloop.index0 %}
         challenges[{{ loopindex }}] = {'id': '{{ challenge.id }}', 'sponsored_by': '{{ challenge.sponsored_by }}', 'content': '{{ challenge.content }}', 'prizes': '{{ challenge.prizes}}'};
         {% endfor %};
         for (var i = 0; i < challenges.length; i++) {
