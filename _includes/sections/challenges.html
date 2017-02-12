@@ -15,7 +15,7 @@
     	<div class="col-md-offset-2 col-lg-offset-2 col-xs-12 col-sm-12 col-md-8 col-lg-8">
 		    <div id="challenges_nav" {% if site.data.challenges.size > 1 %}class="slick slick-nav"{% endif %} style="text-align: center">
 			{% for challenge in site.data.challenges %}
-		        <div id="{{ challenge.id }}_nav" {% if site.data.challenges.size > 1 %}class="slick-slide"{% endif %} style="margin-left: 50px; margin-right: 50px; text-align:center; font-size: 18px"><img src="{{ challenge.sponsor_logo }}" class="img-responsive" alt="{{ challenge.sponsor }}" style="margin-left: auto; margin-right: auto"></div>
+		        <div id="{{ challenge.id }}_nav" {% if site.data.challenges.size > 1 %}class="slick-slide"{% endif %} style="margin-left: 50px; margin-right: 50px; text-align:center; font-size: 18px"><img src="{{ challenge.sponsor_logo }}" class="img-responsive" alt="{{ challenge.sponsor }}" style="width: 20%; height: 20%; margin-left: auto; margin-right: auto"></div>
 		    {% endfor %}
 			</div>
 		</div>
