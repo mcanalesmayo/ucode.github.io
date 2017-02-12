@@ -27,7 +27,7 @@
 			<div class="row">
 			    <h2>Premios</h2>
 			</div>
-			<div id="challenges_prizes_for">
+			<div id="challenges_prizes_for" class="slick slick-for">
 			{% for challenge in site.data.challenges %}
 				<div id="{{ challenge.id }}_prizes_for" class="slick-slide">
 					<p id="{{ challenge.id }}_prizes">{{ challenge.prizes }}</p>
