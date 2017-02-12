@@ -18,7 +18,7 @@
         	</div>
         	<div id="challenges_content_for" class="slick slick-for">
         		{% for challenge in site.data.challenges %}
-        		<div id="{{ challenge.id }}_content_for" class="row">
+        		<div id="{{ challenge.id }}_content_for" class="slick-slide">
 	                <p id="{{ challenge.id }}_content">{{ challenge.content }}</p>
 	            </div>
 	            {% endfor %}
@@ -28,14 +28,14 @@
 			    <h2>Premios</h2>
 			</div>
 			{% for challenge in site.data.challenges %}
-			<div id="{{ challenge.id }}_prizes_for" class="row">
+			<div id="{{ challenge.id }}_prizes_for" class="slick-slide">
 				<p id="{{ challenge.id }}_prizes">{{ challenge.prizes }}</p>
 			</div>
 			{% endfor %}
 			<div class="row"><br/></div>
         	<div id="challenges_nav" class="slick slick-nav">
     		{% for challenge in site.data.challenges %}
-                <div id="{{ challenge.id }}_nav">{{ challenge.sponsor }}</div>
+                <div id="{{ challenge.id }}_nav" class="slick-slide">{{ challenge.sponsor }}</div>
             {% endfor %}
         	</div>
         </div>
