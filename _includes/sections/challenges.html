@@ -51,16 +51,6 @@
 </div>
 <script type="text/javascript">
     $(document).ready(function(){
-    	// Patch for multiple slicks
-    	Slick.prototype.asNavFor = function(index) {
-		    var _ = this, asNavFor = _.options.asNavFor != null ? $(_.options.asNavFor) : null;
-		    if(asNavFor != null){
-		        asNavFor.each(function(item){
-		            $(asNavFor[item]).slick('getSlick').slideHandler(index, true);
-		        });
-		    }
-		};
-
 		$('#challenges_hint_for').slick({
 			slidesToShow: 1,
 			slidesToScroll: 1,
