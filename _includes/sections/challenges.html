@@ -13,20 +13,24 @@
     </div>
     <div class="row">
         <div style="text-align: center" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        	<div class="slick slick-for">
-        		<div class="row" style="text-align: center">
-	                <h2>Pista</h2>
-	                <p id="challenge_content"></p>
-	            </div>
-	            <div class="row"><br/></div>
-	            <div class="row" style="text-align: center">
-	                <h2>Premios</h2>
-	                <p id="challenge_prizes"></p>
-	            </div>
-        	</div>
-        	<div class="slick slick-nav">
+        	<div id="challenges_for" class="slick slick-for">
         		{% for challenge in site.data.challenges %}
-                    <div id="{{ challenge.id }}">{{ challenge.sponsor }}</div>
+        		<div id="{{ challenge.id }}_for">
+	        		<div class="row" style="text-align: center">
+		                <h2>Pista</h2>
+		                <p id="challenge_content">{{ challenge.content }}</p>
+		            </div>
+		            <div class="row"><br/></div>
+		            <div class="row" style="text-align: center">
+		                <h2>Premios</h2>
+		                <p id="challenge_prizes">{{ challenge.prizes }}</p>
+		            </div>
+	            </div>
+	            {% endfor %}
+        	</div>
+        	<div id="challenges_nav" class="slick slick-nav">
+        		{% for challenge in site.data.challenges %}
+                    <div id="{{ challenge.id }}_nav">{{ challenge.sponsor }}</div>
                 {% endfor %}
         	</div>
         </div>
@@ -47,7 +51,7 @@
 </div>
 <script type="text/javascript">
     $(document).ready(function(){
-		$('.slider-for').slick({
+		$('#challenges_for').slick({
 			slidesToShow: 1,
 			slidesToScroll: 1,
 			arrows: false,
@@ -67,7 +71,7 @@
 				}
 			}]
 		});
-		$('.slider-nav').slick({
+		$('#challenges_nav').slick({
 			slidesToShow: 3,
 			slidesToScroll: 1,
 			asNavFor: '.slider-for',
@@ -90,23 +94,5 @@
 				}
 			}]
 		});
-
-        var btn_sel = $('#challenge_chooser');
-        var chlg_content_sel = $('#challenge_content');
-        var chlg_prizes_sel = $('#challenge_prizes');
-        var chlg_container = $('#challenge_container');
-        chlg_container_hidden = 1;
-        {% for challenge in site.data.challenges %}
-        $('#{{ challenge.id }}').click(function(e){
-            chlg_content_sel.text('{{ challenge.content }}');
-            chlg_prizes_sel.text('{{ challenge.prizes }}');
-            btn_sel.text('{{ challenge.sponsor }}');
-            if (chlg_container_hidden){
-                chlg_container_hidden = 0;
-                chlg_container.show();
-            }
-            e.preventDefault();
-        });
-        {% endfor %}
     });
 </script>
