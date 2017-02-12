@@ -13,9 +13,9 @@
     </div>
     <div class="row m-b-md">
     	<div class="col-md-offset-2 col-lg-offset-2 col-xs-12 col-sm-12 col-md-8 col-lg-8">
-		    <div id="challenges_nav" class="slick slick-nav" style="text-align: center">
+		    <div id="challenges_nav" {% if site.data.challenges.size > 1 %}class="slick slick-nav"{% endif %} style="text-align: center">
 			{% for challenge in site.data.challenges %}
-		        <div id="{{ challenge.id }}_nav" class="slick-slide" style="margin-left: 50px; margin-right: 50px; text-align:center; font-size: 18px"><img src="{{ challenge.sponsor_logo }}" class="img-responsive" alt="{{ challenge.sponsor }}" style="margin-left: auto; margin-right: auto"></div>
+		        <div id="{{ challenge.id }}_nav" {% if site.data.challenges.size > 1 %}class="slick-slide"{% endif %} style="margin-left: 50px; margin-right: 50px; text-align:center; font-size: 18px"><img src="{{ challenge.sponsor_logo }}" class="img-responsive" alt="{{ challenge.sponsor }}" style="margin-left: auto; margin-right: auto"></div>
 		    {% endfor %}
 			</div>
 		</div>
@@ -25,9 +25,9 @@
         	<div class="row">
         		<h2>Pista</h2>
         	</div>
-        	<div id="challenges_content_for" class="slick slick-for">
+        	<div id="challenges_content_for" {% if site.data.challenges.size > 1 %}class="slick slick-for"{% endif %}>
         		{% for challenge in site.data.challenges %}
-        		<div id="{{ challenge.id }}_content_for" class="slick-slide">
+        		<div id="{{ challenge.id }}_content_for" {% if site.data.challenges.size > 1 %}class="slick-slide"{% endif %}>
 	                <p id="{{ challenge.id }}_content" style="font-size: 18px">{{ challenge.content }}</p>
 	            </div>
 	            {% endfor %}
@@ -36,9 +36,9 @@
 			<div class="row">
 			    <h2>Premios</h2>
 			</div>
-			<div id="challenges_prizes_for" class="slick slick-for">
+			<div id="challenges_prizes_for" {% if site.data.challenges.size > 1 %}class="slick slick-for"{% endif %}>
 			{% for challenge in site.data.challenges %}
-				<div id="{{ challenge.id }}_prizes_for" class="slick-slide">
+				<div id="{{ challenge.id }}_prizes_for" {% if site.data.challenges.size > 1 %}class="slick-slide"{% endif %}>
 					<p id="{{ challenge.id }}_prizes" style="font-size: 18px">{{ challenge.prizes }}</p>
 				</div>
 			{% endfor %}
