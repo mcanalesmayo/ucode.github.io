@@ -13,14 +13,22 @@
     </div>
     <div class="row">
         <div style="text-align: center" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="btn-group">
-                <button class="btn btn-primary btn-lg dropdown-toggle" style="text-align: center" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span id="challenge_chooser">Escoge un reto</span> <span class="caret"></span></button>
-                <ul class="dropdown-menu">
-                {% for challenge in site.data.challenges %}
-                    <li><a href="#" id="{{ challenge.id }}">{{ challenge.sponsor }}</a></li>
+        	<div class="slick slick-for">
+        		<div class="row" style="text-align: center">
+	                <h2>Pista</h2>
+	                <p id="challenge_content"></p>
+	            </div>
+	            <div class="row"><br/></div>
+	            <div class="row" style="text-align: center">
+	                <h2>Premios</h2>
+	                <p id="challenge_prizes"></p>
+	            </div>
+        	</div>
+        	<div class="slick slick-nav">
+        		{% for challenge in site.data.challenges %}
+                    <div id="{{ challenge.id }}">{{ challenge.sponsor }}</div>
                 {% endfor %}
-                </ul>
-            </div>
+        	</div>
         </div>
     </div>
     <div class="row"><br/></div>
@@ -39,6 +47,50 @@
 </div>
 <script type="text/javascript">
     $(document).ready(function(){
+		$('.slider-for').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: false,
+			fade: true,
+			asNavFor: '.slider-nav',
+			responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1
+				}
+			}]
+		});
+		$('.slider-nav').slick({
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			asNavFor: '.slider-for',
+			dots: false,
+			arrows: true,
+			centerMode: true,
+			centerPadding: '40px',
+			focusOnSelect: true,
+			responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1
+				}
+			}]
+		});
+
         var btn_sel = $('#challenge_chooser');
         var chlg_content_sel = $('#challenge_content');
         var chlg_prizes_sel = $('#challenge_prizes');
