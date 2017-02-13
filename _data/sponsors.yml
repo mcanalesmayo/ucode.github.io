@@ -2,3 +2,8 @@ platinum:
   name: 'adidas Group'
   img: 'static/img/sponsors/adidasGroup_fondo_blanco.png'
   link: 'http://careers.adidas-group.com/'
+
+gold:
+  - name: 'Hiberus'
+    img: 'static/img/sponsors/Hiberus_fondo_blanco.png'
+    link: 'https://www.hiberus.com/'
