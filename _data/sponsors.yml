@@ -1,3 +1,4 @@
-- name: 'Grupo Adidas'
-  img: 'static/img/sponsors/adidas_group.png'
+platinum:
+  name: 'adidas Group'
+  img: 'static/img/sponsors/adidasGroup_fondo_blanco.png'
   link: 'http://careers.adidas-group.com/'
