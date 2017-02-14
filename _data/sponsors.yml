@@ -7,3 +7,6 @@ gold:
   - name: 'Hiberus'
     img: 'static/img/sponsors/Hiberus_fondo_blanco.png'
     link: 'https://www.hiberus.com/'
+  - name: 'Cátedra Inycom'
+    img: 'static/img/sponsors/CatedraInycom_fondo_blanco.png'
+    link: 'http://www.inycom.es/'

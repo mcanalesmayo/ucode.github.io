@@ -8,8 +8,8 @@
     {% for collaborator in site.data.collaborators %}
     {% assign idx = forloop.index %}
     {% assign idx0 = forloop.index0 %}
-    {% assign loopmod = idx0 | modulo: 3 %}
-    {% assign lastmod = forloop.length | modulo: 3 %}
+    {% assign loopmod = idx0 | modulo: 4 %}
+    {% assign lastmod = forloop.length | modulo: 4 %}
     {% if forloop.first == true %}
     <div class="row">
     {% elsif loopmod == 0 %}
@@ -19,11 +19,11 @@
         {% if idx == higherthan %}
         {% assign offsetlm = lastmod | times: 4 %}
         {% assign offset = 12 | minus: offsetlm | divided_by: 2 %}
-        <div class="col-sm-offset-{{ offset }} col-sm-4">
+        <div class="col-sm-offset-{{ offset }} col-sm-3">
         {% else %}
-        <div class="col-sm-4">
+        <div class="col-sm-3">
         {% endif %}
-            <a class="img-responsive" href="{{ collaborator.link }}" target="_blank"><img src="{{ collaborator.img | prepend: site.baseurl }}" class="img-responsive" alt="{{ collaborator.name }}" style="margin-left: auto; margin-right: auto"></a>
+            <a class="img-responsive" href="{{ collaborator.link }}" target="_blank"><img src="{{ collaborator.img | prepend: site.baseurl }}" class="img-responsive" alt="{{ collaborator.name }}" style="margin-left: auto; margin-right: auto; max-height: 85px"></a>
         </div>
     {% if forloop.last == true %}
     </div>
