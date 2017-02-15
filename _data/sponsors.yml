@@ -10,3 +10,6 @@ gold:
   - name: 'Cátedra Inycom'
     img: 'static/img/sponsors/CatedraInycom_fondo_blanco.png'
     link: 'http://www.inycom.es/'
+  - name: 'Grupo Oesía'
+    img: 'static/img/sponsors/OesiaGrupo_fondo_blanco.png'
+    link: 'http://grupooesia.com/'
