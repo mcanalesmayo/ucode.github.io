@@ -10,3 +10,6 @@ gold:
   - name: 'Cátedra Inycom'
     img: 'static/img/sponsors/CatedraInycom_fondo_blanco.png'
     link: 'http://www.inycom.es/'
+  - name: 'Everis'
+    img: 'static/img/sponsors/Everis_fondo_blanco.png'
+    link: 'http://www.everis.com'
