@@ -46,7 +46,7 @@
         detail: 'Cena'
         i18n: 'dinner'
       desc:
-        detail: 'Cena en el hall'
+        detail: 'Cena'
         i18n: 'dinner_description'
       date:
         detail: ' 22:00'
@@ -62,7 +62,7 @@
         detail: 'Desayuno'
         i18n: 'breakfast'
       desc:
-        detail: 'Desayuno en el hall'
+        detail: 'Desayuno'
         i18n: 'breakfast_description'
       date:
         detail: ' 08:00'
@@ -76,7 +76,7 @@
         detail: 'Comida'
         i18n: 'lunch'
       desc:
-        detail: 'Comida en el hall'
+        detail: 'Comida'
         i18n: 'lunch_description'
       date:
         detail: ' 14:00'
@@ -90,7 +90,7 @@
         detail: 'Cena'
         i18n: 'dinner'
       desc:
-        detail: 'Cena en el hall'
+        detail: 'Cena'
         i18n: 'dinner_description'
       date:
         detail: ' 21:00'
@@ -106,7 +106,7 @@
         detail: 'Desayuno'
         i18n: 'breakfast'
       desc:
-        detail: 'Desayuno en el hall'
+        detail: 'Desayuno'
         i18n: 'breakfast_description'
       date:
         detail: ' 08:00'
