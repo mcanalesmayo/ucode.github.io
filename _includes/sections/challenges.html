@@ -1,0 +1,98 @@
+<div class="container" style="padding-bottom: 30px" id="i18_challenges">
+    <div class="row m-b-sm">
+        <div class="col-lg-12 text-center">
+            <div class="navy-line"></div>
+            <h1><span data-i18n="challenges.title">Retos</span></h1>
+        </div>
+    </div>
+    <div class="row m-b-sm">
+        <div style="text-align: center; font-size: 16px" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <p>Aquí puedes ver algunas pistas sobre los retos antes del hackathon</p>
+            <p>En la ceremonia de apertura conocerás más detalles sobre cada reto</p>
+        </div>
+    </div>
+    <div class="row m-b-md">
+    	<div class="col-md-offset-2 col-lg-offset-2 col-xs-12 col-sm-12 col-md-8 col-lg-8">
+		    <div id="challenges_nav" {% if site.data.challenges.size > 1 %}class="slick slick-nav"{% endif %} style="text-align: center">
+			{% for challenge in site.data.challenges %}
+		        <div id="{{ challenge.id }}_nav" {% if site.data.challenges.size > 1 %}class="slick-slide"{% endif %} style="margin-left: 50px; margin-right: 50px; text-align:center; font-size: 18px"><img src="{{ challenge.sponsor_logo }}" class="img-responsive" alt="{{ challenge.sponsor }}" style="width: 20%; height: 20%; margin-left: auto; margin-right: auto"></div>
+		    {% endfor %}
+			</div>
+		</div>
+	</div>
+    <div class="row m-b-lg">
+        <div style="text-align: center" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        	<div class="row">
+        		<h2>Pista</h2>
+        	</div>
+        	<div id="challenges_content_for" {% if site.data.challenges.size > 1 %}class="slick slick-for"{% endif %}>
+        		{% for challenge in site.data.challenges %}
+        		<div id="{{ challenge.id }}_content_for" {% if site.data.challenges.size > 1 %}class="slick-slide"{% endif %}>
+	                <p id="{{ challenge.id }}_content" style="font-size: 18px">{{ challenge.content }}</p>
+	            </div>
+	            {% endfor %}
+        	</div>
+        	<div class="row"><br/></div>
+			<div class="row">
+			    <h2>Premios</h2>
+			</div>
+			<div id="challenges_prizes_for" {% if site.data.challenges.size > 1 %}class="slick slick-for"{% endif %}>
+			{% for challenge in site.data.challenges %}
+				<div id="{{ challenge.id }}_prizes_for" {% if site.data.challenges.size > 1 %}class="slick-slide"{% endif %}>
+					<p id="{{ challenge.id }}_prizes" style="font-size: 18px">{{ challenge.prizes }}</p>
+				</div>
+			{% endfor %}
+			</div>
+        </div>
+    </div>
+</div>
+{% if site.data.challenges.size > 1 %}
+<script type="text/javascript">
+    $(document).ready(function(){
+		$('.slick-for').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: false,
+			infinite: true,
+			asNavFor: '.slick-nav',
+			responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1
+				}
+			}]
+		});
+		$('.slick-nav').slick({
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			asNavFor: '.slick-for',
+			dots: false,
+			arrows: true,
+			centerMode: true,
+			centerPadding: '40px',
+			focusOnSelect: true,
+			infinite: true,
+			responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1
+				}
+			}]
+		});
+    });
+</script>
+{% endif %}
