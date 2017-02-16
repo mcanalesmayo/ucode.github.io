@@ -1,153 +1,187 @@
-- name:
-    detail: 'Check-In'
-    i18n: 'checkin'
-  desc:
-    detail: 'Comienzo del check-in y preparación para la hackathon'
-    i18n: 'checkin_description'
-  date:
-    detail: 'Viernes 19:00'
-    i18n: 'checkin_date'
-  place:
-    detail: 'Hall del Edificio Betancourt'
-    i18n: 'betancourt_hall'
-  icon: ' fa-check-square-o'
+- name: 'Viernes'
+  milestones:
+    - name:
+        detail: 'Check-In'
+        i18n: 'checkin'
+      desc:
+        detail: 'Comienzo del check-in'
+        i18n: 'checkin_description'
+      date:
+        detail: ' 18:00'
+        i18n: 'checkin_date'
+      place:
+        detail: 'Hall del Edificio Betancourt'
+        i18n: 'betancourt_hall'
+      icon: ' fa-check-square-o'
 
-- name:
-    detail: 'Ceremonia de apertura'
-    i18n: 'opening_ceremony'
-  desc:
-    detail: 'Presentación de la hackathon'
-    i18n: 'opening_ceremony_description'
-  date:
-    detail: 'Viernes 20:00'
-    i18n: 'opening_ceremony_date'
-  place:
-    detail: 'Salón de Actos'
-    i18n: 'conference_room'
-  icon: 'fa-star'
+    - name:
+        detail: 'Presentación del hackathon'
+        i18n: 'opening_ceremony'
+      desc:
+        detail: 'Ceremonia de apertura'
+        i18n: 'opening_ceremony_description'
+      date:
+        detail: ' 20:00'
+        i18n: 'opening_ceremony_date'
+      place:
+        detail: 'Salón de Actos'
+        i18n: 'conference_room'
+      icon: 'fa-users'
 
-- name:
-    detail: 'Cena'
-    i18n: 'dinner'
-  desc:
-    detail: 'Cena en el hall'
-    i18n: 'dinner_description'
-  date:
-    detail: 'Viernes 21:00'
-    i18n: 'dinner_date_day1'
-  place:
-    detail: 'Hall'
-    i18n: 'hall'
-  icon: 'fa-cutlery'
+    - name:
+        detail: 'Comienzo'
+        i18n: 'hackathon_start'
+      desc:
+        detail: 'Comienzo del hackathon'
+        i18n: 'hackathon_start_description'
+      date:
+        detail: ' 21:00'
+        i18n: 'hackathon_start_date'
+      place:
+        detail: 'Sala Tomás Pollán'
+        i18n: 'tomas_pollan_room'
+      icon: 'fa-hourglass-start'
 
-- name:
-    detail: 'Comienzo'
-    i18n: 'hackathon_start'
-  desc:
-    detail: 'Comienzo de la hackathon'
-    i18n: 'hackathon_start_description'
-  date:
-    detail: 'Viernes 22:00'
-    i18n: 'hackathon_start_date'
-  place:
-    detail: 'Sala Tomás Pollán'
-    i18n: 'tomas_pollan_room'
-  icon: 'fa-hourglass-start'
+    - name:
+        detail: 'Cena'
+        i18n: 'dinner'
+      desc:
+        detail: 'Cena en el hall'
+        i18n: 'dinner_description'
+      date:
+        detail: ' 22:00'
+        i18n: 'dinner_date_day1'
+      place:
+        detail: 'Hall'
+        i18n: 'hall'
+      icon: 'fa-cutlery'
 
-- name:
-    detail: 'Desayuno'
-    i18n: 'breakfast'
-  desc:
-    detail: 'Desayuno en el hall'
-    i18n: 'breakfast_description'
-  date:
-    detail: 'Sábado 08:00'
-    i18n: 'breakfast_date_day2'
-  place:
-    detail: 'Hall'
-    i18n: 'hall'
-  icon: 'fa-coffee'
+- name: 'Sábado'
+  milestones:
+    - name:
+        detail: 'Desayuno'
+        i18n: 'breakfast'
+      desc:
+        detail: 'Desayuno en el hall'
+        i18n: 'breakfast_description'
+      date:
+        detail: ' 08:00'
+        i18n: 'breakfast_date_day2'
+      place:
+        detail: 'Hall'
+        i18n: 'hall'
+      icon: 'fa-coffee'
 
-- name:
-    detail: 'Comida'
-    i18n: 'lunch'
-  desc:
-    detail: 'Comida en el hall'
-    i18n: 'lunch_description'
-  date:
-    detail: 'Sábado 13:30'
-    i18n: 'lunch_date_day2'
-  place:
-    detail: 'Hall'
-    i18n: 'hall'
-  icon: 'fa-cutlery'
+    - name:
+        detail: 'Comida'
+        i18n: 'lunch'
+      desc:
+        detail: 'Comida en el hall'
+        i18n: 'lunch_description'
+      date:
+        detail: ' 14:00'
+        i18n: 'lunch_date_day2'
+      place:
+        detail: 'Hall'
+        i18n: 'hall'
+      icon: 'fa-cutlery'
 
-- name:
-    detail: 'Cena'
-    i18n: 'dinner'
-  desc:
-    detail: 'Cena en el hall'
-    i18n: 'dinner_description'
-  date:
-    detail: 'Sábado 21:00'
-    i18n: 'dinner_date_day2'
-  place:
-    detail: 'Hall'
-    i18n: 'hall'
-  icon: 'fa-cutlery'
+    - name:
+        detail: 'Cena'
+        i18n: 'dinner'
+      desc:
+        detail: 'Cena en el hall'
+        i18n: 'dinner_description'
+      date:
+        detail: ' 21:00'
+        i18n: 'dinner_date_day2'
+      place:
+        detail: 'Hall'
+        i18n: 'hall'
+      icon: 'fa-cutlery'
 
-- name:
-    detail: 'Fin del hacking'
-    i18n: 'hackathon_stop'
-  desc:
-    detail: 'Entrega de proyectos'
-    i18n: 'hackathon_stop_description'
-  date:
-    detail: 'Domingo 07:45'
-    i18n: 'hackathon_stop_date'
-  place:
-    detail: 'Sala Tomás Pollán'
-    i18n: 'tomas_pollan_room'
-  icon: 'fa-hourglass-end'
+- name: 'Domingo'
+  milestones:
+    - name:
+        detail: 'Desayuno'
+        i18n: 'breakfast'
+      desc:
+        detail: 'Desayuno en el hall'
+        i18n: 'breakfast_description'
+      date:
+        detail: ' 08:00'
+        i18n: 'breakfast_date_day2'
+      place:
+        detail: 'Hall'
+        i18n: 'hall'
+      icon: 'fa-coffee'
 
-- name:
-    detail: 'Desayuno'
-    i18n: 'breakfast'
-  desc:
-    detail: 'Cena en el hall'
-    i18n: 'breakfast_description'
-  date:
-    detail: 'Domingo 08:00'
-    i18n: 'breakfast_date_day3'
-  place:
-    detail: 'Hall'
-    i18n: 'hall'
-  icon: 'fa-coffee'
+    - name:
+        detail: 'Fin del hacking'
+        i18n: 'hackathon_stop'
+      desc:
+        detail: 'Entrega de proyectos'
+        i18n: 'hackathon_stop_description'
+      date:
+        detail: ' 09:00'
+        i18n: 'hackathon_stop_date'
+      place:
+        detail: 'Sala Tomás Pollán'
+        i18n: 'tomas_pollan_room'
+      icon: 'fa-hourglass-end'
 
-- name:
-    detail: 'Deliberación'
-    i18n: 'deliberation'
-  desc:
-    detail: 'Valoración por parte del jurado de los proyectos presentados'
-    i18n: 'deliberation_description'
-  date:
-    detail: 'Domingo 09:00'
-    i18n: 'deliberation_date'
-  place:
-    detail: 'Sala Tomás Pollán'
-    i18n: 'tomas_pollan_room'
-  icon: 'fa-group'
+    - name:
+        detail: 'Deliberación'
+        i18n: 'deliberation'
+      desc:
+        detail: 'Valoración por el jurado'
+        i18n: 'deliberation_description'
+      date:
+        detail: ' 09:30'
+        i18n: 'deliberation_date'
+      place:
+        detail: 'Sala Tomás Pollán'
+        i18n: 'tomas_pollan_room'
+      icon: 'fa-group'
 
-- name:
-    detail: 'Premios'
-    i18n: 'prizes'
-  desc:
-    detail: 'Entrega de premios a los mejores proyectos desarrollados'
-    i18n: 'prizes_description'
-  date:
-    detail: 'Domingo 10:30'
-    i18n: 'prizes_date'
-  place:
-    detail: 'Salón de Actos'
-    i18n: 'conference_room'
-  icon: 'fa-trophy'
+    - name:
+        detail: 'Premios'
+        i18n: 'prizes'
+      desc:
+        detail: 'Entrega de premios'
+        i18n: 'prizes_description'
+      date:
+        detail: ' 12:00'
+        i18n: 'prizes_date'
+      place:
+        detail: 'Salón de Actos'
+        i18n: 'conference_room'
+      icon: 'fa-trophy'
+
+    - name:
+        detail: 'Ceremonia de clausura'
+        i18n: 'closing_ceremony'
+      desc:
+        detail: 'Ceremonia de clausura'
+        i18n: 'closing_ceremony_description'
+      date:
+        detail: ' 13:00'
+        i18n: 'closing_ceremony_date'
+      place:
+        detail: 'Salón de Actos'
+        i18n: 'conference_room'
+      icon: 'fa-users'
+
+    - name:
+        detail: 'Comida'
+        i18n: 'final_lunch'
+      desc:
+        detail: 'Paella gigante'
+        i18n: 'final_lunch_description'
+      date:
+        detail: ' 14:00'
+        i18n: 'final_lunch_date_day2'
+      place:
+        detail: 'Plaza de las Ingenierías'
+        i18n: 'engineerings_square'
+      icon: 'fa-cutlery'
