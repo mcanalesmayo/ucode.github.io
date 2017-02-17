@@ -14,8 +14,11 @@
                 <a class="img-responsive" href="{{ site.data.sponsors.platinum.link }}" target="_blank"><img src="{{ site.data.sponsors.platinum.img | prepend: site.baseurl }}" class="img-responsive" alt="{{ site.data.sponsors.platinum.name }}" style="margin-left: auto; margin-right: auto"></a>
             </div>
     	</div>
+        <br/>
+        <br/>
+        <br/>
     	<div class="row">
-    		<div class="col-xs-12 m-b-md">
+    		<div class="col-xs-12">
     			<h1 style="text-align: center; font-size: 24px; color: #668cff">Oro</h1>
     		</div>
     	</div>
@@ -36,6 +39,38 @@
             <div class="col-sm-offset-{{ offset }} col-sm-4" style="{{ sponsor.container-style }}">
             {% else %}
             <div class="col-sm-4" style="{{ sponsor.container-style }}">
+            {% endif %}
+                <a class="img-responsive" href="{{ sponsor.link }}" target="_blank"><img src="{{ sponsor.img | prepend: site.baseurl }}" class="img-responsive" alt="{{ sponsor.name }}" style="margin-left: auto; margin-right: auto; max-height: {{ sponsor.max-height }}"></a>
+            </div>
+        {% if forloop.last == true %}
+        </div>
+        {% endif %}
+        {% endfor %}
+        <br/>
+        <br/>
+        <br/>
+        <div class="row">
+            <div class="col-xs-12 m-b-md">
+                <h1 style="text-align: center; font-size: 24px; color: #668cff">Plata</h1>
+            </div>
+        </div>
+        {% for sponsor in site.data.sponsors.silver %}
+        {% assign idx = forloop.index %}
+        {% assign idx0 = forloop.index0 %}
+        {% assign loopmod = idx0 | modulo: 4 %}
+        {% assign lastmod = forloop.length | modulo: 4 %}
+        {% if forloop.first == true %}
+        <div class="row">
+        {% elsif loopmod == 0 %}
+        </div><div class="row">
+        {% endif %}
+            {% assign higherthan = forloop.length | minus: lastmod | plus: 1 %}
+            {% if idx == higherthan %}
+            {% assign offsetlm = lastmod | times: 3 %}
+            {% assign offset = 12 | minus: offsetlm | divided_by: 2 %}
+            <div class="col-sm-offset-{{ offset }} col-sm-3" style="{{ sponsor.container-style }}">
+            {% else %}
+            <div class="col-sm-3" style="{{ sponsor.container-style }}">
             {% endif %}
                 <a class="img-responsive" href="{{ sponsor.link }}" target="_blank"><img src="{{ sponsor.img | prepend: site.baseurl }}" class="img-responsive" alt="{{ sponsor.name }}" style="margin-left: auto; margin-right: auto; max-height: {{ sponsor.max-height }}"></a>
             </div>
