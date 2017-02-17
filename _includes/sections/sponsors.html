@@ -25,9 +25,9 @@
         {% assign loopmod = idx0 | modulo: 3 %}
         {% assign lastmod = forloop.length | modulo: 3 %}
         {% if forloop.first == true %}
-        <div class="row">
+        <div class="row" style="{{ sponsor.container-style }}">
         {% elsif loopmod == 0 %}
-        </div><div class="row">
+        </div><div class="row" style="{{ sponsor.container-style }}">
         {% endif %}
             {% assign higherthan = forloop.length | minus: lastmod | plus: 1 %}
             {% if idx == higherthan %}
