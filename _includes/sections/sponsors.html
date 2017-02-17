@@ -62,7 +62,7 @@
         {% endif %}
             {% assign higherthan = forloop.length | minus: lastmod | plus: 1 %}
             {% if idx == higherthan %}
-            {% assign offsetlm = lastmod | times: 4 %}
+            {% assign offsetlm = lastmod | times: 3 %}
             {% assign offset = 12 | minus: offsetlm | divided_by: 2 %}
             <div class="col-sm-offset-{{ offset }} col-sm-3" style="{{ sponsor.container-style }}">
             {% else %}
