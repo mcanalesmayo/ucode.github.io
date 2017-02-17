@@ -16,3 +16,6 @@ gold:
   - name: 'Grupo Oesía'
     img: 'static/img/sponsors/OesiaGrupo_fondo_blanco.png'
     link: 'http://grupooesia.com/'
+  - name: 'Simply ON-LINE'
+    img: 'static/img/sponsors/SimplyOnline_fondo_blanco.PNG'
+    link: 'https://www.simply.es/compra-online'
