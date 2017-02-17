@@ -31,7 +31,7 @@ gold:
     container-style: 'top: 30px'
 silver:
   - name: 'Cátedra Banco Santander'
-    img: 'static/img/sponsors/CBS_completo_color_sin_fondo.png'
+    img: 'static/img/sponsors/CBS_fondo_blanco.png'
     link: 'http://www.unizar.es/CBSantander/'
     max-height: 'none'
     container-style: 'top: 10px'
