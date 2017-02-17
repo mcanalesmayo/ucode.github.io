@@ -17,7 +17,7 @@ gold:
   - name: 'Everis'
     img: 'static/img/sponsors/Everis_fondo_blanco.png'
     link: 'http://www.everis.com'
-    max-height: '110px'
+    max-height: '135px'
     container-style: ''
   - name: 'Grupo Oesía'
     img: 'static/img/sponsors/OesiaGrupo_fondo_blanco.png'
