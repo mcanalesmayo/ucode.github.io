@@ -6714,7 +6714,6 @@ body.landing-page {
 .landing-page .header-back.one {
   background: url('../img/landing/header_and_banner.png') 50% 0 no-repeat;
   background-repeat:no-repeat;
-  background-size:contain;
   background-position:center;
 }
 .landing-page .carousel {
