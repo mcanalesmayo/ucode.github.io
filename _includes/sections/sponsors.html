@@ -20,7 +20,7 @@
     			<h1 style="text-align: center; font-size: 24px; color: #668cff">Oro</h1>
     		</div>
     	</div>
-    	<div class="row shuffle gold-slick">
+    	<div id="gold-sponsors" class="row shuffle gold-slick">
         {% for sponsor in site.data.sponsors.gold %}
             <div class="col-xs-4" style="{{ sponsor.container-style }}">
                 <a class="img-responsive" href="{{ sponsor.link }}" target="_blank"><img src="{{ sponsor.img | prepend: site.baseurl }}" class="img-responsive" alt="{{ sponsor.name }}" style="margin-left: auto; margin-right: auto; max-height: {{ sponsor.max-height }}"></a>
@@ -87,32 +87,27 @@
 		* End of snippet
 		*/
 	    $(document).ready(function(){
-		    var parent = $(".shuffle");
-		    var divs = parent.children();
-		    while (divs.length) {
-		        parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
-		    }
-			$('.gold-slick').slick({
-				responsive: [
-				{
-					breakpoint: 768,
-					settings: {
-						slidesToScroll: 1,
-						slidesToShow: 3,
-						dots: false,
-						arrows: true,
-						centerMode: false,
-						autoplay: true,
-						autoplaySpeed: 4000,
-						pauseOnHover: true,
-						infinite: true
-					}
-				},
-				{
-					breakpoint: 320,
-					settings: "unslick"
-				}]
-			});
+	    	if (screen.width >= 768){
+	    		$('#gold-sponsors .row div').unwrap('.row');
+	    		$('.shuffle').sort(function(){
+	    			return (Math.round(Math.random()) - 0.5)
+	    		});
+	    		var gold_sponsors_div = $('#gold-sponsors div');
+	    		gold_sponsors_div.removeClass("col-xs-4");
+	    		gold_sponsors_div.addClass("slick-slide");
+	    		gold_sponsors_div.css("top", "0px");
+	    		$('.gold-slick').slick({
+					slidesToScroll: 1,
+					slidesToShow: 3,
+					dots: false,
+					arrows: true,
+					centerMode: false,
+					autoplay: true,
+					autoplaySpeed: 4000,
+					pauseOnHover: true,
+					infinite: true
+				});
+	    	}
 	    });
     </script>
 </div>
