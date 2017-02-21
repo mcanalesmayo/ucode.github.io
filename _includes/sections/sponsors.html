@@ -20,30 +20,13 @@
     			<h1 style="text-align: center; font-size: 24px; color: #668cff">Oro</h1>
     		</div>
     	</div>
+    	<div id="gold-sponsors" class="row shuffle gold-slick">
         {% for sponsor in site.data.sponsors.gold %}
-        {% assign idx = forloop.index %}
-        {% assign idx0 = forloop.index0 %}
-        {% assign loopmod = idx0 | modulo: 3 %}
-        {% assign lastmod = forloop.length | modulo: 3 %}
-        {% if forloop.first == true %}
-        <div class="row">
-        {% elsif loopmod == 0 %}
-        </div><div class="row">
-        {% endif %}
-            {% assign higherthan = forloop.length | minus: lastmod | plus: 1 %}
-            {% if idx == higherthan %}
-            {% assign offsetlm = lastmod | times: 4 %}
-            {% assign offset = 12 | minus: offsetlm | divided_by: 2 %}
-            <div class="col-sm-offset-{{ offset }} col-sm-4" style="{{ sponsor.container-style }}">
-            {% else %}
-            <div class="col-sm-4" style="{{ sponsor.container-style }}">
-            {% endif %}
+            <div class="col-xs-12 col-sm-4" style="{{ sponsor.container-style }}">
                 <a class="img-responsive" href="{{ sponsor.link }}" target="_blank"><img src="{{ sponsor.img | prepend: site.baseurl }}" class="img-responsive" alt="{{ sponsor.name }}" style="margin-left: auto; margin-right: auto; max-height: {{ sponsor.max-height }}"></a>
             </div>
-        {% if forloop.last == true %}
-        </div>
-        {% endif %}
         {% endfor %}
+        </div>
         <br/>
         <br/>
         <div class="row">
@@ -76,4 +59,45 @@
         {% endif %}
         {% endfor %}
     </div>
+    <script type="text/javascript">
+	    /*
+	    * Snippet taken from: https://css-tricks.com/snippets/jquery/shuffle-dom-elements/
+	    */
+    	$.fn.randomize = function(selector){
+		    (selector ? this.find(selector) : this).parent().each(function(){
+		        $(this).children(selector).sort(function(){
+		            return Math.random() - 0.5;
+		        }).detach().appendTo(this);
+		    });
+
+		    return this;
+		};
+		/*
+		* End of snippet
+		*/
+	    $(document).ready(function(){
+	    	if (screen.width >= 768){
+	    		$('#gold-sponsors .row div').unwrap('.row');
+	    		$('.shuffle').randomize('div');
+	    		var gold_sponsors_div = $('#gold-sponsors div');
+	    		gold_sponsors_div.removeClass("col-xs-12");
+	    		gold_sponsors_div.removeClass("col-md-4");
+	    		gold_sponsors_div.addClass("slick-slide");
+	    		gold_sponsors_div.css("top", "0px");
+	    		$('.gold-slick').slick({
+					slidesToScroll: 1,
+					slidesToShow: 3,
+					dots: false,
+					arrows: false,
+					centerMode: false,
+					autoplay: true,
+					autoplaySpeed: 0,
+					speed: 4000,
+					cssEase: 'linear',
+					pauseOnHover: true,
+					infinite: true
+				});
+	    	}
+	    });
+    </script>
 </div>
