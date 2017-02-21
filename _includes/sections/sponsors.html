@@ -22,7 +22,7 @@
     	</div>
     	<div id="gold-sponsors" class="row shuffle gold-slick">
         {% for sponsor in site.data.sponsors.gold %}
-            <div class="col-xs-4" style="{{ sponsor.container-style }}">
+            <div class="col-xs-12 col-md-4" style="{{ sponsor.container-style }}">
                 <a class="img-responsive" href="{{ sponsor.link }}" target="_blank"><img src="{{ sponsor.img | prepend: site.baseurl }}" class="img-responsive" alt="{{ sponsor.name }}" style="margin-left: auto; margin-right: auto; max-height: {{ sponsor.max-height }}"></a>
             </div>
         {% endfor %}
@@ -63,35 +63,25 @@
 	    /*
 	    * Snippet taken from: https://css-tricks.com/snippets/jquery/shuffle-dom-elements/
 	    */
-    	(function($){
-		    $.fn.shuffle = function() {
-		        var allElems = this.get(),
-		            getRandom = function(max) {
-		                return Math.floor(Math.random() * max);
-		            },
-		            shuffled = $.map(allElems, function(){
-		                var random = getRandom(allElems.length),
-		                    randEl = $(allElems[random]).clone(true)[0];
-		                allElems.splice(random, 1);
-		                return randEl;
-		           });
+    	$.fn.randomize = function(selector){
+		    (selector ? this.find(selector) : this).parent().each(function(){
+		        $(this).children(selector).sort(function(){
+		            return Math.random() - 0.5;
+		        }).detach().appendTo(this);
+		    });
 
-		        this.each(function(i){
-		            $(this).replaceWith($(shuffled[i]));
-		        });
-
-		        return $(shuffled);
-		    };
-		})(jQuery);
+		    return this;
+		};
 		/*
 		* End of snippet
 		*/
 	    $(document).ready(function(){
 	    	if (screen.width >= 768){
 	    		$('#gold-sponsors .row div').unwrap('.row');
-	    		$('.shuffle').shuffle();
+	    		$('.shuffle').randomize('div');
 	    		var gold_sponsors_div = $('#gold-sponsors div');
-	    		gold_sponsors_div.removeClass("col-xs-4");
+	    		gold_sponsors_div.removeClass("col-xs-12");
+	    		gold_sponsors_div.removeClass("col-md-4");
 	    		gold_sponsors_div.addClass("slick-slide");
 	    		gold_sponsors_div.css("top", "0px");
 	    		$('.gold-slick').slick({
