@@ -87,26 +87,24 @@
 		* End of snippet
 		*/
 	    $(document).ready(function(){
-	    	$(function () {
-			    var parent = $(".shuffle");
-			    var divs = parent.children();
-			    while (divs.length) {
-			        parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
-			    }
-			});
+		    var parent = $(".shuffle");
+		    var divs = parent.children();
+		    while (divs.length) {
+		        parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+		    }
 			$('.gold-slick').slick({
 				responsive: [
 				{
 					breakpoint: 768,
 					settings: {
 						slidesToScroll: 1,
+						slidesToShow: 3,
 						dots: false,
 						arrows: true,
 						centerMode: false,
 						autoplay: true,
 						autoplaySpeed: 4000,
 						pauseOnHover: true,
-						slidesToShow: 3,
 						infinite: true
 					}
 				},
