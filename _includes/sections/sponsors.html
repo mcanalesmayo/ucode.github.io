@@ -63,7 +63,7 @@
 	    /*
 	    * Snippet taken from: https://css-tricks.com/snippets/jquery/shuffle-dom-elements/
 	    */
-    	/*(function($){
+    	(function($){
 		    $.fn.shuffle = function() {
 		        var allElems = this.get(),
 		            getRandom = function(max) {
@@ -82,16 +82,14 @@
 
 		        return $(shuffled);
 		    };
-		})(jQuery);*/
+		})(jQuery);
 		/*
 		* End of snippet
 		*/
 	    $(document).ready(function(){
 	    	if (screen.width >= 768){
 	    		$('#gold-sponsors .row div').unwrap('.row');
-	    		$('.shuffle').sort(function(){
-	    			return (Math.round(Math.random()) - 0.5)
-	    		});
+	    		$('.shuffle').shuffle();
 	    		var gold_sponsors_div = $('#gold-sponsors div');
 	    		gold_sponsors_div.removeClass("col-xs-4");
 	    		gold_sponsors_div.addClass("slick-slide");
@@ -100,10 +98,12 @@
 					slidesToScroll: 1,
 					slidesToShow: 3,
 					dots: false,
-					arrows: true,
+					arrows: false,
 					centerMode: false,
 					autoplay: true,
-					autoplaySpeed: 4000,
+					autoplaySpeed: 0,
+					speed: 4000,
+					cssEase: 'linear',
 					pauseOnHover: true,
 					infinite: true
 				});
