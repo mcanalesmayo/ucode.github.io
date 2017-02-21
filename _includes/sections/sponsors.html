@@ -22,7 +22,7 @@
     	</div>
     	<div id="gold-sponsors" class="row shuffle gold-slick">
         {% for sponsor in site.data.sponsors.gold %}
-            <div class="col-xs-12 col-md-4" style="{{ sponsor.container-style }}">
+            <div class="col-xs-12 col-sm-4" style="{{ sponsor.container-style }}">
                 <a class="img-responsive" href="{{ sponsor.link }}" target="_blank"><img src="{{ sponsor.img | prepend: site.baseurl }}" class="img-responsive" alt="{{ sponsor.name }}" style="margin-left: auto; margin-right: auto; max-height: {{ sponsor.max-height }}"></a>
             </div>
         {% endfor %}
