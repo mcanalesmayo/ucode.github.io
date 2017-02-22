@@ -53,6 +53,12 @@ sections:
     tpl: 'tournaments.html'
     css: ''
 
+  - id: 'resources'
+    i18n: 'nav.resources'
+    name: 'Recursos'
+    tpl: 'resources.html'
+    css: ''
+
   - id: 'timeline'
     i18n: 'nav.timeline'
     name: 'Horario'
