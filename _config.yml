@@ -47,6 +47,12 @@ sections:
     tpl: 'challenges.html'
     css: ''
 
+  - id: 'tournaments'
+    i18n: 'nav.tournaments'
+    name: 'Torneos'
+    tpl: 'tournaments.html'
+    css: ''
+
   - id: 'resources'
     i18n: 'nav.resources'
     name: 'Recursos'
