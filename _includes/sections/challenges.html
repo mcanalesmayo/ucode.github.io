@@ -54,7 +54,19 @@
 			infinite: false,
 			asNavFor: '.slick-nav',
 			draggable: false,
-			slidesToShow: 1
+			responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1
+				}
+			},
+			{
+				breakpoint: 320,
+				settings: {
+					slidesToShow: 1
+				}
+			}]
 		});
 		$('.slick-nav').slick({
 			slidesToShow: 3,
