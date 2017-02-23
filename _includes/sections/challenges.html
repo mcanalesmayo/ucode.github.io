@@ -48,11 +48,11 @@
 </div>
 <script type="text/javascript">
     $(document).ready(function(){
-		$('#challenges_for').slick({
+		$('.slick-for').slick({
 			slidesToScroll: 1,
 			arrows: false,
 			infinite: true,
-			asNavFor: '#challenges_nav',
+			asNavFor: '.slick-nav',
 			draggable: false,
 			responsive: [
 			{
@@ -68,9 +68,9 @@
 				}
 			}]
 		});
-		$('#challenges_nav').slick({
+		$('.slick-nav').slick({
 			slidesToScroll: 1,
-			asNavFor: '#challenges_for',
+			asNavFor: '.slick-for',
 			dots: false,
 			arrows: true,
 			draggable: true,
