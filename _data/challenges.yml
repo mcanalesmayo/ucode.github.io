@@ -12,7 +12,7 @@
   style: ''
 - id: 'ucode_eina'
   sponsor: 'uCode EINA'
-  sponsor_logo: 'static/img/logo/ucode_transparente.png'
+  sponsor_logo: 'static/img/logo/ucode_abr_transparente.png'
   content: 'Desde la organización de uCode EINA premiaremos al equipo de uCoders más prometedores.'
   prizes: 'TBD'
   style: ''
