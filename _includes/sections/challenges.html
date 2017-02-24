@@ -51,10 +51,11 @@
 		$('.chall-slick-for').slick({
 			slidesToShow: 1,
 			slidesToScroll: 1,
+			dots: false,
 			arrows: false,
 			infinite: false,
 			asNavFor: '.chall-slick-nav',
-			draggable: false,
+			draggable: true,
 			responsive: [
 			{
 				breakpoint: 768,
@@ -72,15 +73,15 @@
 		$('.chall-slick-nav').slick({
 			slidesToShow: 3,
 			slidesToScroll: 1,
-			asNavFor: '.chall-slick-for',
 			dots: false,
 			arrows: true,
+			infinite: false,
+			asNavFor: '.chall-slick-for',
 			draggable: true,
 			variableWidth: true,
 			centerMode: true,
 			centerPadding: '40px',
 			focusOnSelect: true,
-			infinite: false,
 			responsive: [
 			{
 				breakpoint: 768,
