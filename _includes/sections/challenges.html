@@ -52,23 +52,10 @@
 			slidesToShow: 1,
 			slidesToScroll: 1,
 			dots: false,
-			arrows: false,
+			arrows: true,
 			infinite: false,
 			asNavFor: '#challenges_nav',
-			draggable: true,
-			responsive: [
-			{
-				breakpoint: 768,
-				settings: {
-					slidesToShow: 1
-				}
-			},
-			{
-				breakpoint: 320,
-				settings: {
-					slidesToShow: 1
-				}
-			}]
+			draggable: true
 		});
 		$('#challenges_nav').slick({
 			slidesToShow: 3,
@@ -77,11 +64,7 @@
 			arrows: true,
 			infinite: false,
 			asNavFor: '.chall-slick-for',
-			draggable: true,
-			variableWidth: false,
-			centerMode: false,
-			centerPadding: '40px',
-			focusOnSelect: false
+			draggable: true
 		});
     });
 </script>
