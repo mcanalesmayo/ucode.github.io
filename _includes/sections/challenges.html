@@ -47,6 +47,11 @@
     </div>
 </div>
 <script type="text/javascript">
+	var slick_set_init_active = function() {
+        var slide_track = $('#i18_challenges .slide-track');
+        slide_track.find('#adidas_group').addClass('slick-current')
+    };
+
     $(document).ready(function(){
 		$('.chall-slick-for').slick({
 			slidesToShow: 1,
@@ -82,6 +87,7 @@
 			centerMode: true,
 			centerPadding: '40px',
 			focusOnSelect: true,
+			onInit: slick_set_init_active,
 			responsive: [
 			{
 				breakpoint: 768,
