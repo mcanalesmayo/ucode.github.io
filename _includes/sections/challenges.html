@@ -56,6 +56,7 @@
 			infinite: false,
 			asNavFor: '.chall-slick-nav',
 			draggable: false,
+			initialSlide: 1,
 			responsive: [
 			{
 				breakpoint: 768,
@@ -71,7 +72,7 @@
 			}]
 		});
 		$('.chall-slick-nav').slick({
-			slidesToShow: 1,
+			slidesToShow: 2,
 			slidesToScroll: 1,
 			dots: false,
 			arrows: true,
@@ -82,11 +83,12 @@
 			centerMode: true,
 			centerPadding: '40px',
 			focusOnSelect: true,
+			initialSlide: 1,
 			responsive: [
 			{
 				breakpoint: 768,
 				settings: {
-					slidesToShow: 1
+					slidesToShow: 2
 				}
 			},
 			{
