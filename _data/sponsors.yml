@@ -29,6 +29,7 @@ gold:
     link: 'https://www.simply.es/compra-online'
     max-height: '105px'
     container-style: 'margin-top: 20px'
+
 silver:
   - name: 'Cátedra Banco Santander'
     img: 'static/img/sponsors/CBS_fondo_blanco.png'
@@ -38,5 +39,10 @@ silver:
   - name: 'Asociación de Ingenieros Informáticos de Aragón'
     img: 'static/img/sponsors/AI2A_fondo_blanco.png'
     link: 'http://www.ai2aragon.es/'
+    max-height: '85px'
+    container-style: ''
+  - name: 'Nologin'
+    img: 'static/img/sponsors/nologin_fondo_blanco.png'
+    link: 'http://www.nologin.es'
     max-height: '85px'
     container-style: ''
