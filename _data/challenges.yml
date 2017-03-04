@@ -7,7 +7,7 @@
 - id: 'hiberus'
   sponsor: 'Hiberus'
   sponsor_logo: 'static/img/sponsors/Hiberus_fondo_blanco.png'
-  content: 'Hiberus os trae un reto relacionado con el Internet of Things (IoT), en el que tendréis que desarrollar aplicaciones móviles con conexión a gadgets.'
+  content: 'Hiberus os trae un reto relacionado con el Internet of Things (IoT), en el que tendréis que desarrollar aplicaciones móviles con conexión a gadgets. Aunque Hiberus os traerá algunos, podréis usar vuestros propios gadgets.'
   prizes: 'El equipo ganador obtendrá un premio económico y un set de gadgets para seguir investigando.'
   style: 'margin-top: 22px'
 - id: 'adidas_group'
