@@ -145,13 +145,27 @@
       icon: 'fa-group'
 
     - name:
+        detail: 'MotoStudent'
+        i18n: 'motostudent'
+      desc:
+        detail: 'Motor Show de MotoStudent'
+        i18n: 'motostudent_description'
+      date:
+        detail: ' 12:00'
+        i18n: 'motostudent_date'
+      place:
+        detail: 'Plaza de las Ingenierías'
+        i18n: 'motostudent_place'
+      icon: 'fa-motorcycle'
+
+    - name:
         detail: 'Premios'
         i18n: 'prizes'
       desc:
         detail: 'Entrega de premios'
         i18n: 'prizes_description'
       date:
-        detail: ' 12:00'
+        detail: ' 12:30'
         i18n: 'prizes_date'
       place:
         detail: 'Salón de Actos'
