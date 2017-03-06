@@ -10,10 +10,11 @@
     {% assign idx0 = forloop.index0 %}
     {% assign loopmod = idx0 | modulo: 4 %}
     {% assign lastmod = forloop.length | modulo: 4 %}
+    {% if idx0 < 4 %}
     {% if forloop.first == true %}
-    <div class="row">
+    <div class="row m-b-xs">
     {% elsif loopmod == 0 %}
-    </div><div class="row">
+    </div><div class="row m-b-xs">
     {% endif %}
         {% assign higherthan = forloop.length | minus: lastmod | plus: 1 %}
         {% if idx == higherthan %}
@@ -26,6 +27,17 @@
             <a class="img-responsive" href="{{ collaborator.link }}" target="_blank"><img src="{{ collaborator.img | prepend: site.baseurl }}" class="img-responsive" alt="{{ collaborator.name }}" style="margin-left: auto; margin-right: auto; max-height: 85px"></a>
         </div>
     {% if forloop.last == true %}
+    </div>
+    {% endif %}
+    {% else %}
+    <div class="row">
+        <div class="col-sm-offset-4 col-sm-4">
+            <div class="row">
+                <div class="col-sm-offset-1 col-sm-10">
+                    <a class="img-responsive" href="{{ collaborator.link }}" target="_blank"><img src="{{ collaborator.img | prepend: site.baseurl }}" class="img-responsive" alt="{{ collaborator.name }}" style="margin-left: auto; margin-right: auto; max-height: 85px"></a>
+                </div>
+            </div>
+        </div>
     </div>
     {% endif %}
     {% endfor %}
