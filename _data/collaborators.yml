@@ -13,3 +13,7 @@
 - name: 'IDiA'
   img: 'static/img/collaborators/idia.png'
   link: 'http://www.idia.es/'
+
+- name: 'GitKraken'
+  img: 'static/img/collaborators/gitkraken.png'
+  link: 'https://www.gitkraken.com/'
