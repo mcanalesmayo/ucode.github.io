@@ -27,4 +27,4 @@
   sponsor_logo: 'static/img/sponsors/CatedraInycom_fondo_blanco.png'
   content: '¿Qué eres capaz de hacer con una ingente cantidad de datos? Big Data y Procesamiento del Lenguaje Natural (PLN) se unen en el reto de Inycom. Sé capaz de encontrar los patrones y la información escondida en diversos conjuntos de datos.'
   prizes: 'Un fabuloso kit de sensores y robótica aguarda al equipo ganador.'
-  style: ''
+  style: 'margin-top: 22px'
