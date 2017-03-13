@@ -101,6 +101,20 @@
       icon: 'fa-group'
 
     - name:
+        detail: 'Comienzo torneos de adidas'
+        i18n: 'adidas_tournaments_start'
+      desc:
+        detail: 'Comienzo torneos de adidas'
+        i18n: 'adidas_tournaments_description'
+      date:
+        detail: ' 11:00'
+        i18n: 'adidas_tournaments'
+      place:
+        detail: 'Hall'
+        i18n: 'hall'
+      icon: 'fa-hourglass-start'
+
+    - name:
         detail: 'Comida'
         i18n: 'lunch'
       desc:
