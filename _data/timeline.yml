@@ -56,6 +56,20 @@
         i18n: 'hall'
       icon: 'fa-cutlery'
 
+    - name:
+        detail: 'Charla adidas: Machine Learning – Vuforia y TensorFlow'
+        i18n: 'adidas_1'
+      desc:
+        detail: 'Charla adidas: Machine Learning – Vuforia y TensorFlow'
+        i18n: 'adidas_1_description'
+      date:
+        detail: ' 22:40'
+        i18n: 'adidas_1_date'
+      place:
+        detail: 'Aula empresa'
+        i18n: 'enterprise_room'
+      icon: 'fa-group'
+
 - name: 'Sábado'
   milestones:
     - name:
@@ -71,6 +85,20 @@
         detail: 'Hall'
         i18n: 'hall'
       icon: 'fa-coffee'
+
+    - name:
+        detail: 'Charla adidas: E-commerce & Bots'
+        i18n: 'adidas_2'
+      desc:
+        detail: 'Charla adidas: E-commerce & Bots'
+        i18n: 'adidas_2_description'
+      date:
+        detail: ' 10:00'
+        i18n: 'adidas_2_date'
+      place:
+        detail: 'Aula empresa'
+        i18n: 'enterprise_room'
+      icon: 'fa-group'
 
     - name:
         detail: 'Comida'
@@ -102,6 +130,20 @@
 
 - name: 'Domingo'
   milestones:
+    - name:
+        detail: 'adidas nos trae churros con chocolate!'
+        i18n: 'fritter'
+      desc:
+        detail: 'adidas nos trae churros con chocolate!'
+        i18n: 'fritter_description'
+      date:
+        detail: ' 06:00'
+        i18n: 'churros_date'
+      place:
+        detail: 'Plaza de las Ingenierías'
+        i18n: 'fritter_place'
+      icon: 'fa-coffee'
+
     - name:
         detail: 'Desayuno'
         i18n: 'breakfast'
