@@ -46,7 +46,7 @@
 			<div class="row"><br/></div>
 			<div id="challenges_details_for" class="slick chall-slick-for">
 			{% for challenge in site.data.challenges %}
-			    <div id="{{ challenge.id }}_details_for" class="slick-slide"><h2 style="color: #337ab7">Haz click <strong><a href="{{ challenge.details }}" target="_blank">aquí</a></strong> para conocer los detalles del reto y también de sus premios</h2></div>
+			    <div id="{{ challenge.id }}_details_for" class="slick-slide"><h2 style="color: #337ab7">Para conocer los detalles del reto y de los premios de {{ challenge.sponsor }} haz click <strong><a href="{{ challenge.details }}" target="_blank">aquí</a></strong></h2></div>
 			{% endfor %}
 			</div>
         </div>
