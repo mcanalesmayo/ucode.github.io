@@ -42,9 +42,12 @@
 					<p id="{{ challenge.id }}_prizes" style="font-size: 18px">{{ challenge.prizes }}</p>
 				</div>
 			{% endfor %}
+			</div>
 			<div class="row"><br/></div>
-			<div class="row">
-			    <div>Haz click <a href="{{ challenge.details }}">aquí</a> para conocer los detalles del reto y también de sus premios</div>
+			<div id="challenges_details_for" class="slick chall-slick-for">
+			{% for challenge in site.data.challenges %}
+			    <div id="{{ challenge.id }}_details_for" class="slick-slide">Haz click <a href="{{ challenge.details }}">aquí</a> para conocer los detalles del reto y también de sus premios</div>
+			{% endfor %}
 			</div>
         </div>
     </div>
