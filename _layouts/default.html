@@ -11,6 +11,16 @@
 <body id="page-top" class="landing-page">
 
 
+	    {% include header.html %}
+
+
+    {{ content }}
+
+	{% if page.title != 'index' %}
+	    {% include footer.html %}
+	{% else %}
+		{% include index_footer.html %}
+	{% endif %}
 
 </body>
 </html>
