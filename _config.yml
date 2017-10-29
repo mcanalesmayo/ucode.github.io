@@ -17,17 +17,12 @@ author:
   facebook_username: ''
   github_username: 'MarcosCM'
   head_img: 'static/img/organizers/Marcos.jpg'
-  
+
 about:
   email: 'soporte@ucode.es'
 
 # sections
 sections:
-  - id: 'about'
-    i18n: 'nav.about'
-    name: 'Qué es'
-    tpl: 'about.html'
-    css: ''
 
 # localization
 languages:
