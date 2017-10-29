@@ -10,9 +10,9 @@
 
 <body id="page-top" class="landing-page">
 
-
+	{% if page.title != 'index' %}
 	    {% include header.html %}
-
+	{% endif %}
 
     {{ content }}
 
