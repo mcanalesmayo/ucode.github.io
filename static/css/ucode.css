@@ -1,0 +1,4 @@
+.letters {
+	animation: beat .25s infinite alternate;
+	transform-origin: center;
+}
