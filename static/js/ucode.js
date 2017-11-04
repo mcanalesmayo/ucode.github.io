@@ -6,7 +6,7 @@ $(document).ready(
     function() {
       img = document.getElementById('screw');
       angle = (angle + 1) % 360;
-      img.style = "transform:rotate(" + angle + "deg); display:block; margin:auto; max-width:60%; max-height:60%;";
+      img.style = "transform:rotate(" + angle + "deg); display:block; margin:auto; max-width:30%; max-height:30%;";
   }, 30)
 
 );
