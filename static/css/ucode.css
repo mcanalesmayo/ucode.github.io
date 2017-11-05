@@ -14,7 +14,7 @@
 }
 
 .screw {
-	animation: rotari 2.5s infinite;
+	animation: rotari 5s linear infinite;
 	transform-origin: center;
 }
 
