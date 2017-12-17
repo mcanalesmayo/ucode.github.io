@@ -1,5 +1,5 @@
 # Website settings
-title: "uCode 2018 | | EINA, Zaragoza"
+title: "uCode 2018 | EINA, Zaragoza"
 logo_title: "uCode"
 description: "Hackathon uCode EINA en la Escuela de Ingeniería y Arquitectura, Zaragoza"
 keywords: "uCode,hack,hacker,hackathon,hacking,EINA,Zaragoza,adidas"
@@ -29,9 +29,6 @@ languages:
   - locale: 'es'
     flag: 'static/img/flags/Spain.png'
 
-# blog img path
-img_path: 'http://www.ucode.es/static/img/blog'
-
 # Build settings
 encoding: "utf-8"
 
@@ -45,7 +42,5 @@ kramdown:
 google:
   analytics:
     id: 'UA-87705893-1'
-
-eventbrite: 'https://www.eventbrite.com/e/registro-ucode-2016-w-29071122510'
 
 previous: 'http://2017.ucode.es'
