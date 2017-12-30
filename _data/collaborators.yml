@@ -1,0 +1,19 @@
+- name: 'Unizar'
+  img: 'static/img/collaborators/unizar.png'
+  link: 'https://www.unizar.es/'
+
+- name: 'Tecnara'
+  img: 'static/img/collaborators/tecnara.png'
+  link: 'http://tecnara.es/'
+
+- name: 'Bifi'
+  img: 'static/img/collaborators/bifi.png'
+  link: 'http://www.bifi.es/'
+
+- name: 'IDiA'
+  img: 'static/img/collaborators/idia.png'
+  link: 'http://www.idia.es/'
+
+- name: 'GitKraken'
+  img: 'static/img/collaborators/gitkraken.png'
+  link: 'https://www.gitkraken.com/'

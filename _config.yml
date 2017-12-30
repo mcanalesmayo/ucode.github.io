@@ -1,7 +1,7 @@
 # Website settings
-title: "uCode 2018 | EINA, Zaragoza"
+title: "uCode EINA powered by adidas | 10, 11 y 12 de marzo | EINA, Zaragoza"
 logo_title: "uCode"
-description: "Hackathon uCode EINA en la Escuela de Ingeniería y Arquitectura, Zaragoza"
+description: "Hackathon uCode EINA powered by adidas 10, 11 y 12 de marzo en la Escuela de Ingeniería y Arquitectura, Zaragoza"
 keywords: "uCode,hack,hacker,hackathon,hacking,EINA,Zaragoza,adidas"
 baseurl: "/"
 url: "http://www.ucode.es"
@@ -16,17 +16,86 @@ author:
   email: 'soporte@ucode.es'
   facebook_username: ''
   github_username: 'MarcosCM'
-
+  head_img: 'static/img/organizers/Marcos.jpg'
+  
 about:
   email: 'soporte@ucode.es'
 
 # sections
 sections:
+  - id: 'about'
+    i18n: 'nav.about'
+    name: 'Qué es'
+    tpl: 'about.html'
+    css: ''
+
+  - id: 'faq'
+    i18n: 'nav.faq'
+    name: 'F.A.Q.'
+    tpl: 'faq.html'
+    css: ''
+
+  - id: 'sponsors'
+    i18n: 'nav.sponsors'
+    name: 'Patrocinadores'
+    tpl: 'sponsors.html'
+    css: ''
+
+  - id: 'challenges'
+    i18n: 'nav.challenges'
+    name: 'Retos'
+    tpl: 'challenges.html'
+    css: ''
+
+  - id: 'tournaments'
+    i18n: 'nav.tournaments'
+    name: 'Torneos'
+    tpl: 'tournaments.html'
+    css: ''
+
+  - id: 'resources'
+    i18n: 'nav.resources'
+    name: 'Recursos'
+    tpl: 'resources.html'
+    css: ''
+
+  - id: 'timeline'
+    i18n: 'nav.timeline'
+    name: 'Horario'
+    tpl: 'timeline.html'
+    css: 'timeline'
+
+  - id: 'collaborators'
+    i18n: 'nav.collaborators'
+    name: 'Colaboradores'
+    tpl: 'collaborators.html'
+    css: ''
+
+  - id: 'organizers'
+    i18n: 'nav.organizers'
+    name: 'Organizadores'
+    tpl: 'organizers.html'
+    css: ''
+
+#  - id: 'blog'
+#    i18n: 'nav.blog'
+#    name: 'Blog'
+#    tpl: 'blog.html'
+#    css: 'testimonials navy-section'
+
+  - id: 'where'
+    i18n: 'nav.where'
+    name: 'Dónde'
+    tpl: 'where.html'
+    css: ''
 
 # localization
 languages:
   - locale: 'es'
     flag: 'static/img/flags/Spain.png'
+
+# blog img path
+img_path: 'http://www.ucode.es/static/img/blog'
 
 # Build settings
 encoding: "utf-8"
@@ -42,4 +111,4 @@ google:
   analytics:
     id: 'UA-87705893-1'
 
-previous: 'http://2017.ucode.es'
+eventbrite: 'https://www.eventbrite.com/e/registro-ucode-2016-w-29071122510'

@@ -6708,11 +6708,11 @@ body.landing-page {
   height: auto;
 }
 .landing-page .header-back {
-  height: 100%;
+  height: 470px;
   width: 100%;
 }
 .landing-page .header-back.one {
-  background-color: #ffffff;
+  background-image: url('../img/landing/header_and_banner.png');
   background-repeat:no-repeat;
   background-size:contain;
   background-position:center;
