@@ -4,8 +4,9 @@
   },
   "nav":{
     "home": "Inicio",
+    "about": "Qué es",
     "sponsors": "Patrocinadores",
-    "timeline": "Cronograma",
+    "timeline": "Horario",
     "collaborators": "Colaboradores",
     "organizers": "Organizadores",
     "blog": "Blog",
@@ -15,7 +16,7 @@
     "title": "Patrocinadores"
   },
   "timeline": {
-    "title": "Cronograma"
+    "title": "Horario"
   },
   "collaborators": {
     "title": "Colaboradores"
