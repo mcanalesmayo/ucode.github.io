@@ -1,7 +1,7 @@
 # Website settings
-title: "uCode EINA powered by adidas | 10, 11 y 12 de marzo | EINA, Zaragoza"
+title: "uCode 2018 | 9, 10 y 11 de marzo | EINA, Zaragoza"
 logo_title: "uCode"
-description: "Hackathon uCode EINA powered by adidas 10, 11 y 12 de marzo en la Escuela de Ingeniería y Arquitectura, Zaragoza"
+description: "Hackathon uCode 9, 10 y 11 de marzo en la Escuela de Ingeniería y Arquitectura, Zaragoza"
 keywords: "uCode,hack,hacker,hackathon,hacking,EINA,Zaragoza,adidas"
 baseurl: "/"
 url: "http://www.ucode.es"
@@ -35,11 +35,11 @@ sections:
     tpl: 'faq.html'
     css: ''
 
-  - id: 'sponsors'
-    i18n: 'nav.sponsors'
-    name: 'Patrocinadores'
-    tpl: 'sponsors.html'
-    css: ''
+  # - id: 'sponsors'
+  #   i18n: 'nav.sponsors'
+  #   name: 'Patrocinadores'
+  #   tpl: 'sponsors.html'
+  #   css: ''
 
   - id: 'challenges'
     i18n: 'nav.challenges'
@@ -47,17 +47,17 @@ sections:
     tpl: 'challenges.html'
     css: ''
 
-  - id: 'tournaments'
-    i18n: 'nav.tournaments'
-    name: 'Torneos'
-    tpl: 'tournaments.html'
-    css: ''
+  # - id: 'tournaments'
+  #   i18n: 'nav.tournaments'
+  #   name: 'Torneos'
+  #   tpl: 'tournaments.html'
+  #   css: ''
 
-  - id: 'resources'
-    i18n: 'nav.resources'
-    name: 'Recursos'
-    tpl: 'resources.html'
-    css: ''
+  # - id: 'resources'
+  #   i18n: 'nav.resources'
+  #   name: 'Recursos'
+  #   tpl: 'resources.html'
+  #   css: ''
 
   - id: 'timeline'
     i18n: 'nav.timeline'
@@ -65,11 +65,11 @@ sections:
     tpl: 'timeline.html'
     css: 'timeline'
 
-  - id: 'collaborators'
-    i18n: 'nav.collaborators'
-    name: 'Colaboradores'
-    tpl: 'collaborators.html'
-    css: ''
+  # - id: 'collaborators'
+  #   i18n: 'nav.collaborators'
+  #   name: 'Colaboradores'
+  #   tpl: 'collaborators.html'
+  #   css: ''
 
   - id: 'organizers'
     i18n: 'nav.organizers'

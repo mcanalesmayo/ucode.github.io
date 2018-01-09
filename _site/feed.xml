@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>uCode EINA powered by adidas | 10, 11 y 12 de marzo | EINA, Zaragoza</title>
-    <description>Hackathon uCode EINA powered by adidas 10, 11 y 12 de marzo en la Escuela de Ingeniería y Arquitectura, Zaragoza</description>
+    <title>uCode 2018 | 9, 10 y 11 de marzo | EINA, Zaragoza</title>
+    <description>Hackathon uCode 9, 10 y 11 de marzo en la Escuela de Ingeniería y Arquitectura, Zaragoza</description>
     <link>http://localhost:4000//</link>
     <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 08 Jan 2018 21:49:21 +0100</pubDate>
-    <lastBuildDate>Mon, 08 Jan 2018 21:49:21 +0100</lastBuildDate>
+    <pubDate>Mon, 08 Jan 2018 23:38:17 +0100</pubDate>
+    <lastBuildDate>Mon, 08 Jan 2018 23:38:17 +0100</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
     
   </channel>
