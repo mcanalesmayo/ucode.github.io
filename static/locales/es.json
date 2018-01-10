@@ -5,12 +5,17 @@
   "nav":{
     "home": "Inicio",
     "about": "Qué es",
+    "signup": "Inscripción",
     "sponsors": "Patrocinadores",
     "timeline": "Horario",
     "collaborators": "Colaboradores",
     "organizers": "Organizadores",
+    "direction" : "Dirección",
     "blog": "Blog",
     "where": "Dónde"
+  },
+    "signup": {
+    "title": "Inscripción"
   },
   "sponsors": {
     "title": "Patrocinadores"
@@ -23,6 +28,9 @@
   },
   "organizers": {
     "title": "Organizadores"
+  },
+  "direction": {
+    "title": "Dirección"
   },
   "blog":{
     "my_blog": "Blog"

@@ -1,0 +1,42 @@
+- name: 'Jorge Cáncer Gil'
+  i18n: 'jorgecancergil'
+  social:
+    twitter: 'https://twitter.com/jorgcan'
+    linkedin: 'https://es.linkedin.com/in/jorge-cáncer-gil-93158797'
+    github: 'https://github.com/jorcox'
+  img: 'static/img/organizers/jorgecancergil.jpg'
+  desc: 'Fundador y Organizador'
+
+- name: 'Marcos Canales Mayo'
+  i18n: 'marcoscanalesmayo'
+  social:
+    twitter: 'https://twitter.com/MarketesCM'
+    linkedin: 'https://es.linkedin.com/in/marcos-canales-mayo-b5a679a5'
+    github: 'https://github.com/MarcosCM'
+  img: 'static/img/organizers/marcoscanalesmayo.jpg'
+  desc: 'Fundador y Organizador'
+
+- name: 'Marina Túnez Trilla'
+  i18n: 'marinatuneztrilla'
+  social:
+    linkedin: 'https://es.linkedin.com/in/marina-túnez-trilla-992238132'
+  img: 'static/img/organizers/marinatuneztrilla.jpg'
+  desc: 'Diseñadora'
+
+- name: 'Francisco Javier López Pellicer'
+  i18n: 'fjlopezpellicer'
+  social:
+    twitter: 'https://twitter.com/fjlopezpellicer'
+    linkedin: 'https://es.linkedin.com/in/franciscojlopezpellicer'
+    github: 'https://github.com/fjlopez'
+  img: 'static/img/organizers/fjlopezpellicer.jpeg'
+  desc: 'Organizador'
+
+- name: 'Borja Espejo García'
+  i18n: 'borjaespejogarcia'
+  social:
+    twitter: 'https://twitter.com/borjaeg'
+    linkedin: 'https://es.linkedin.com/in/borja-a-espejo-garcía-617b196b'
+    github: 'https://github.com/borjaeg'
+  img: 'static/img/organizers/borjaespejogarcia.jpg'
+  desc: 'Organizador'

@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta content="Hackathon uCode 9, 10 y 11 de marzo en la Escuela de Ingeniería y Arquitectura, Zaragoza" name="description">
-  <meta name="keywords" content="uCode,hack,hacker,hackathon,hacking,EINA,Zaragoza,adidas">
+  <meta name="keywords" content="uCode,hack,hacker,hackathon,hacking,EINA,Zaragoza">
   <meta name="author" content="Marcos Canales Mayo">
   <title>uCode 2018 | 9, 10 y 11 de marzo | EINA, Zaragoza</title>
   <!-- favicon -->
@@ -72,8 +72,8 @@
 
 <script type="text/javascript">
   $(document).ready(function(){
-    $(".register_link").click(function(){
-      window.open('https://www.eventbrite.com/e/registro-ucode-2016-w-29071122510','_blank');
+    $(".last_edition_link").click(function(){
+      window.open('http://2017.ucode.es','_blank');
     });
   });
 </script>
@@ -105,6 +105,12 @@
                     <li>
                       <a class="page-scroll" href="#about">
                         <span class="section_nav_span" data-i18n="nav.about" style="color: rgb(103, 106, 108)">Qué es</span>
+                      </a>
+                    </li>
+                
+                    <li>
+                      <a class="page-scroll" href="#signup">
+                        <span class="section_nav_span" data-i18n="nav.signup" style="color: rgb(103, 106, 108)">Inscripción</span>
                       </a>
                     </li>
                 
@@ -170,8 +176,8 @@
     <div class="container" id="i18_collaborators">
     <div class="row">
         <div class="col-xs-12 text-center" style="padding-top: 20px">
-            <button type="button" class="btn btn-primary btn-lg register_link">
-                <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Inscribirse
+            <button type="button" class="btn btn-primary btn-lg last_edition_link">
+                <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Ver edición 2017
             </button>
             <button type="button" class="btn btn-primary btn-lg newsletter_link">
                 <span class="glyphicon glyphicon-inbox" aria-hidden="true"></span> Newsletters
@@ -186,7 +192,7 @@
     </div>
     <div class="row">
         <div class="col-md-offset-3 col-xs-12 col-md-6">
-        <p><strong>uCode by adidas</strong> es el primer hackathon que se celebra en la Escuela de Ingeniería y Arquitectura de la Universidad de Zaragoza, orientado a estudiantes a nivel nacional.</p> <p>Durante las 36 horas que dura, equipos de hasta 4 personas resolverán interesantes retos propuestos por nuestras empresas patrocinadoras.</p> <p>El evento está orientado a varias disciplinas, como la Informática, la Electrónica, las Telecomunicaciones, la Ingeniería Industrial, el Diseño, etc.</p> <p>No olvides seguir toda la información tanto en nuestro <a href="https://twitter.com/uCodeES" target="_blank">twitter</a> como a través de las <a class="newsletter_link" href="#">newsletters</a>.</p>
+        <p><strong>uCode</strong> es el primer hackathon que se celebra en la Escuela de Ingeniería y Arquitectura de la Universidad de Zaragoza, orientado a estudiantes a nivel nacional.</p> <p>Durante las 36 horas que dura, equipos de hasta 4 personas resolverán interesantes retos propuestos por nuestras empresas patrocinadoras.</p> <p>El evento está orientado a varias disciplinas, como la Informática, la Electrónica, las Telecomunicaciones, la Ingeniería Industrial, el Diseño, etc.</p> <p>No olvides seguir toda la información tanto en nuestro <a href="https://twitter.com/uCodeES" target="_blank">twitter</a> como a través de las <a class="newsletter_link" href="#">newsletters</a>.</p>
         </div>
         <br>
     </div>
@@ -194,7 +200,26 @@
   </section>
 
   
-  <section id="faq" class="features  gray-section  " style="margin-top: 0px;">
+  <section id="signup" class="features  gray-section  " style="margin-top: 0px;">
+    <div class="container-fluid" style="padding-bottom: 30px" id="i18_organizers">
+    <div class="row m-b-lg">
+        <div class="col-lg-12 text-center">
+            <div class="navy-line"></div>
+            <h1><span data-i18n="signup.title">Inscripción</span></h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="text-center">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScgW8xlXvhMYFZkuit7odB-TZLwoSqQr5FSsfNAa5UmZiJJ6Q/viewform?embedded=true" width="760" height="700" frameborder="0" marginheight="0" marginwidth="0">Cargando...</iframe>
+        </div>
+    </div>
+</div>
+<br>
+
+  </section>
+
+  
+  <section id="faq" class="features  " style="margin-top: 0px;">
     <div class="container" style="padding-bottom: 30px" id="i18_faq">
     <div class="row m-b-sm">
         <div class="col-lg-12 text-center">
@@ -211,7 +236,7 @@
         
         
             <h2>¿Cuánto cuesta inscribirse?</h2>
-            <p>La participación en la hackathon es totalmente gratuita. Sólo debes inscribirte <a href="https://goo.gl/forms/sDKsOcRjWVr7KFdf2" target="_blank">aquí</a></p>
+            <p>La participación en la hackathon es totalmente gratuita. Sólo debes inscribirte <a href="#signup">aquí</a></p>
         </div>
         
         
@@ -324,7 +349,7 @@
   </section>
 
   
-  <section id="challenges" class="features  " style="margin-top: 0px;">
+  <section id="challenges" class="features  gray-section  " style="margin-top: 0px;">
     <div class="container" style="padding-bottom: 30px" id="i18_challenges">
     <div class="row m-b-sm">
         <div class="col-lg-12 text-center">
@@ -491,7 +516,7 @@
   </section>
 
   
-  <section id="timeline" class="features  gray-section  timeline" style="margin-top: 0px;">
+  <section id="timeline" class="features  timeline" style="margin-top: 0px;">
     <div class="container" id="i18_milestone">
     <div class="row">
         <div class="col-lg-12 text-center">
@@ -596,166 +621,57 @@
   </section>
 
   
-  <section id="organizers" class="features  " style="margin-top: 0px;">
-    <div class="container-fluid" style="padding-bottom: 30px" id="i18_organizers">
+  <section id="organizers" class="features  gray-section  " style="margin-top: 0px;">
+    <div class="container" style="padding-bottom: 30px" id="i18_organizers">
     <div class="row m-b-lg">
         <div class="col-lg-12 text-center">
             <div class="navy-line"></div>
-            <h1><span data-i18n="organizers.title">Organizadores</span></h1>
+            <h1><span data-i18n="organizadores.title">Organizadores</span></h1>
         </div>
     </div>
-    <div class="row">
     
     
     
-        <div class="col-sm-offset-1 col-sm-2">
     
-            <div class="team-member">
-                <img src="/static/img/organizers/jorgecancergil.jpg" class="img-responsive img-circle img-small" alt="">
-                <h4><span class="navy">Jorge Cáncer Gil</span></h4>
-                <p><span data-i18n="organizers.jorgecancergil">Fundador y Organizador</span></p>
-                
-                <ul class="list-inline">
-                  
-                    <li>
-                        <a class="fa fa-twitter" href="https://twitter.com/jorgcan" aria-label="Twitter"></a>
-                    </li>
-                  
-                  
-                    <li>
-                        <a class="fa fa-linkedin" href="https://es.linkedin.com/in/jorge-cáncer-gil-93158797" aria-label="LinkedIn"></a>
-                    </li>
-                  
-                  
-                    <li>
-                        <a class="fa fa-github" href="https://github.com/jorcox" aria-label="GitHub"></a>
-                    </li>
-                  
-                </ul>
-                
-            </div>
+    
+    
+    
+    <div class="row m-b-xs">
+    
+        
+        
+        
+        
+        <div class="col-sm-offset-2 col-sm-3">
+        
+            <a class="img-responsive" href="https://www.eina.unizar.es/" target="_blank"><img src="/static/img/organizers/eina.jpg" class="img-responsive" alt="EINA" style="margin-left: auto; margin-right: auto; max-height: 85px"></a>
         </div>
     
     
     
-        <div class="col-sm-2">
-    
-            <div class="team-member">
-                <img src="/static/img/organizers/marcoscanalesmayo.jpg" class="img-responsive img-circle img-small" alt="">
-                <h4><span class="navy">Marcos Canales Mayo</span></h4>
-                <p><span data-i18n="organizers.marcoscanalesmayo">Fundador y Organizador</span></p>
-                
-                <ul class="list-inline">
-                  
-                    <li>
-                        <a class="fa fa-twitter" href="https://twitter.com/MarketesCM" aria-label="Twitter"></a>
-                    </li>
-                  
-                  
-                    <li>
-                        <a class="fa fa-linkedin" href="https://es.linkedin.com/in/marcos-canales-mayo-b5a679a5" aria-label="LinkedIn"></a>
-                    </li>
-                  
-                  
-                    <li>
-                        <a class="fa fa-github" href="https://github.com/MarcosCM" aria-label="GitHub"></a>
-                    </li>
-                  
-                </ul>
-                
-            </div>
-        </div>
     
     
     
-        <div class="col-sm-2">
-    
-            <div class="team-member">
-                <img src="/static/img/organizers/marinatuneztrilla.jpg" class="img-responsive img-circle img-small" alt="">
-                <h4><span class="navy">Marina Túnez Trilla</span></h4>
-                <p><span data-i18n="organizers.marinatuneztrilla">Diseñadora</span></p>
-                
-                <ul class="list-inline">
-                  
-                  
-                    <li>
-                        <a class="fa fa-linkedin" href="https://es.linkedin.com/in/marina-túnez-trilla-992238132" aria-label="LinkedIn"></a>
-                    </li>
-                  
-                  
-                </ul>
-                
-            </div>
-        </div>
     
     
     
-        <div class="col-sm-2">
-    
-            <div class="team-member">
-                <img src="/static/img/organizers/fjlopezpellicer.jpeg" class="img-responsive img-circle img-small" alt="">
-                <h4><span class="navy">Francisco Javier López Pellicer</span></h4>
-                <p><span data-i18n="organizers.fjlopezpellicer">Organizador</span></p>
-                
-                <ul class="list-inline">
-                  
-                    <li>
-                        <a class="fa fa-twitter" href="https://twitter.com/fjlopezpellicer" aria-label="Twitter"></a>
-                    </li>
-                  
-                  
-                    <li>
-                        <a class="fa fa-linkedin" href="https://es.linkedin.com/in/franciscojlopezpellicer" aria-label="LinkedIn"></a>
-                    </li>
-                  
-                  
-                    <li>
-                        <a class="fa fa-github" href="https://github.com/fjlopez" aria-label="GitHub"></a>
-                    </li>
-                  
-                </ul>
-                
-            </div>
-        </div>
-    
-    
-    
-        <div class="col-sm-2">
-    
-            <div class="team-member">
-                <img src="/static/img/organizers/borjaespejogarcia.jpg" class="img-responsive img-circle img-small" alt="">
-                <h4><span class="navy">Borja Espejo García</span></h4>
-                <p><span data-i18n="organizers.borjaespejogarcia">Organizador</span></p>
-                
-                <ul class="list-inline">
-                  
-                    <li>
-                        <a class="fa fa-twitter" href="https://twitter.com/borjaeg" aria-label="Twitter"></a>
-                    </li>
-                  
-                  
-                    <li>
-                        <a class="fa fa-linkedin" href="https://es.linkedin.com/in/borja-a-espejo-garcía-617b196b" aria-label="LinkedIn"></a>
-                    </li>
-                  
-                  
-                    <li>
-                        <a class="fa fa-github" href="https://github.com/borjaeg" aria-label="GitHub"></a>
-                    </li>
-                  
-                </ul>
-                
-            </div>
+        
+        
+        <div class="col-sm-3">
+        
+            <a class="img-responsive" href="http://sites.ieee.org/sb-unizar/" target="_blank"><img src="/static/img/organizers/ieeesbuz.png" class="img-responsive" alt="IEEE" style="margin-left: auto; margin-right: auto; max-height: 85px"></a>
         </div>
     
     </div>
+    
+    
+    
 </div>
-<br>
 
   </section>
 
   
-  <section id="where" class="features  gray-section  " style="margin-top: 0px;">
+  <section id="where" class="features  " style="margin-top: 0px;">
     <style>
     .scrolloff {
         pointer-events: none;

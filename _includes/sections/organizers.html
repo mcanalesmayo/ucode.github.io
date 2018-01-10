@@ -1,44 +1,44 @@
-<div class="container-fluid" style="padding-bottom: 30px" id="i18_organizers">
+<div class="container" style="padding-bottom: 30px" id="i18_organizers">
     <div class="row m-b-lg">
         <div class="col-lg-12 text-center">
             <div class="navy-line"></div>
-            <h1><span data-i18n="organizers.title">Organizadores</span></h1>
+            <h1><span data-i18n="organizadores.title">Organizadores</span></h1>
         </div>
     </div>
-    <div class="row">
     {% for organizer in site.data.organizers %}
-    {% assign loopindex = forloop.index %}
-    {% if loopindex == 1 %}
-        <div class="col-sm-offset-1 col-sm-2">
-    {% else %}
-        <div class="col-sm-2">
+    {% assign idx = forloop.index %}
+    {% assign idx0 = forloop.index0 %}
+    {% assign loopmod = idx0 | modulo: 4 %}
+    {% assign lastmod = forloop.length | modulo: 4 %}
+    {% if idx0 < 4 %}
+    {% if forloop.first == true %}
+    <div class="row m-b-xs">
+    {% elsif loopmod == 0 %}
+    </div><div class="row m-b-xs">
     {% endif %}
-            <div class="team-member">
-                <img src="{{ organizer.img | prepend: site.baseurl }}" class="img-responsive img-circle img-small" alt="">
-                <h4><span class="navy">{{ organizer.name }}</span></h4>
-                <p><span data-i18n="organizers.{{ organizer.i18n }}">{{ organizer.desc }}</span></p>
-                {% if organizer.social %}
-                <ul class="list-inline">
-                  {% if organizer.social.twitter %}
-                    <li>
-                        <a class="fa fa-twitter" href="{{ organizer.social.twitter}}" aria-label="Twitter"></a>
-                    </li>
-                  {% endif %}
-                  {% if organizer.social.linkedin %}
-                    <li>
-                        <a class="fa fa-linkedin" href="{{ organizer.social.linkedin '}}" aria-label="LinkedIn"></a>
-                    </li>
-                  {% endif %}
-                  {% if organizer.social.github %}
-                    <li>
-                        <a class="fa fa-github" href="{{ organizer.social.github '}}" aria-label="GitHub"></a>
-                    </li>
-                  {% endif %}
-                </ul>
-                {% endif %}
+        {% assign higherthan = forloop.length | minus: lastmod | plus: 1 %}
+        {% if idx == higherthan %}
+        {% assign offsetlm = lastmod | times: 4 %}
+        {% assign offset = 12 | minus: offsetlm | divided_by: 2 %}
+        <div class="col-sm-offset-{{ offset }} col-sm-3">
+        {% else %}
+        <div class="col-sm-3">
+        {% endif %}
+            <a class="img-responsive" href="{{ organizer.link }}" target="_blank"><img src="{{ organizer.img | prepend: site.baseurl }}" class="img-responsive" alt="{{ organizer.name }}" style="margin-left: auto; margin-right: auto; max-height: 85px"></a>
+        </div>
+    {% if forloop.last == true %}
+    </div>
+    {% endif %}
+    {% else %}
+    <div class="row">
+        <div class="col-sm-offset-4 col-sm-4">
+            <div class="row">
+                <div class="col-sm-offset-1 col-sm-10">
+                    <a class="img-responsive" href="{{ organizer.link }}" target="_blank"><img src="{{ organizer.img | prepend: site.baseurl }}" class="img-responsive" alt="{{ organizer.name }}" style="margin-left: auto; margin-right: auto; max-height: 85px"></a>
+                </div>
             </div>
         </div>
-    {% endfor %}
     </div>
+    {% endif %}
+    {% endfor %}
 </div>
-<br>

@@ -2,7 +2,7 @@ title: 'F.A.Q.'
 content:
   - question:
       title: '¿Cuánto cuesta inscribirse?'
-      answer: 'La participación en la hackathon es totalmente gratuita. Sólo debes inscribirte <a href="https://goo.gl/forms/sDKsOcRjWVr7KFdf2" target="_blank">aquí</a>'
+      answer: 'La participación en la hackathon es totalmente gratuita. Sólo debes inscribirte <a href="#signup">aquí</a>'
   - question:
       title: '¿Qué debo llevar?'
       answer: 'Sólo es necesario que traigas tu DNI o Pasaporte, tu portátil y el cargador. Si quieres ducharte, tráete también una toalla. De lo demás nos encargamos nosotros'
