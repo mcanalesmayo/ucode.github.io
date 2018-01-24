@@ -14,47 +14,47 @@
         i18n: 'betancourt_hall'
       icon: ' fa-check-square-o'
 
-#     - name:
-#         detail: 'Presentación del hackathon'
-#         i18n: 'opening_ceremony'
-#       desc:
-#         detail: 'Ceremonia de apertura'
-#         i18n: 'opening_ceremony_description'
-#       date:
-#         detail: ' 20:00'
-#         i18n: 'opening_ceremony_date'
-#       place:
-#         detail: 'Salón de Actos'
-#         i18n: 'conference_room'
-#       icon: 'fa-users'
+    - name:
+        detail: 'Presentación del hackathon'
+        i18n: 'opening_ceremony'
+      desc:
+        detail: 'Ceremonia de apertura'
+        i18n: 'opening_ceremony_description'
+      date:
+        detail: ' 20:00'
+        i18n: 'opening_ceremony_date'
+      place:
+        detail: 'Salón de Actos'
+        i18n: 'conference_room'
+      icon: 'fa-users'
 
-#     - name:
-#         detail: 'Comienzo'
-#         i18n: 'hackathon_start'
-#       desc:
-#         detail: 'Comienzo del hackathon'
-#         i18n: 'hackathon_start_description'
-#       date:
-#         detail: ' 21:00'
-#         i18n: 'hackathon_start_date'
-#       place:
-#         detail: 'Sala Tomás Pollán'
-#         i18n: 'tomas_pollan_room'
-#       icon: 'fa-hourglass-start'
+    - name:
+        detail: 'Comienzo'
+        i18n: 'hackathon_start'
+      desc:
+        detail: 'Comienzo del hackathon'
+        i18n: 'hackathon_start_description'
+      date:
+        detail: ' 21:00'
+        i18n: 'hackathon_start_date'
+      place:
+        detail: 'Sala Tomás Pollán'
+        i18n: 'tomas_pollan_room'
+      icon: 'fa-hourglass-start'
 
-#     - name:
-#         detail: 'Cena'
-#         i18n: 'dinner'
-#       desc:
-#         detail: 'Cena'
-#         i18n: 'dinner_description'
-#       date:
-#         detail: ' 22:00'
-#         i18n: 'dinner_date_day1'
-#       place:
-#         detail: 'Hall'
-#         i18n: 'hall'
-#       icon: 'fa-cutlery'
+    - name:
+        detail: 'Cena'
+        i18n: 'dinner'
+      desc:
+        detail: 'Hot dogs & nachos'
+        i18n: 'dinner_description'
+      date:
+        detail: ' 22:00'
+        i18n: 'dinner_date_day1'
+      place:
+        detail: 'Hall'
+        i18n: 'hall'
+      icon: 'fa-cutlery'
 
 #     - name:
 #         detail: 'Charla adidas: Machine Learning – Vuforia y TensorFlow'
@@ -70,8 +70,8 @@
 #         i18n: 'enterprise_room'
 #       icon: 'fa-group'
 
-# - name: 'Sábado'
-#   milestones:
+- name: 'Sábado'
+  milestones:
 #     - name:
 #         detail: 'Desayuno'
 #         i18n: 'breakfast'
@@ -114,33 +114,33 @@
 #         i18n: 'hall'
 #       icon: 'fa-hourglass-start'
 
-#     - name:
-#         detail: 'Comida'
-#         i18n: 'lunch'
-#       desc:
-#         detail: 'Comida'
-#         i18n: 'lunch_description'
-#       date:
-#         detail: ' 14:00'
-#         i18n: 'lunch_date_day2'
-#       place:
-#         detail: 'Hall'
-#         i18n: 'hall'
-#       icon: 'fa-cutlery'
+    - name:
+        detail: 'Comida'
+        i18n: 'lunch'
+      desc:
+        detail: 'Paella gigante'
+        i18n: 'lunch_description'
+      date:
+        detail: ' 14:00'
+        i18n: 'lunch_date_day2'
+      place:
+        detail: 'Hall'
+        i18n: 'hall'
+      icon: 'fa-cutlery'
 
-#     - name:
-#         detail: 'Cena'
-#         i18n: 'dinner'
-#       desc:
-#         detail: 'Cena'
-#         i18n: 'dinner_description'
-#       date:
-#         detail: ' 21:00'
-#         i18n: 'dinner_date_day2'
-#       place:
-#         detail: 'Hall'
-#         i18n: 'hall'
-#       icon: 'fa-cutlery'
+    - name:
+        detail: 'Cena'
+        i18n: 'dinner'
+      desc:
+        detail: 'Pizza'
+        i18n: 'dinner_description'
+      date:
+        detail: ' 21:00'
+        i18n: 'dinner_date_day2'
+      place:
+        detail: 'Hall'
+        i18n: 'hall'
+      icon: 'fa-cutlery'
 
 - name: 'Domingo'
   milestones:
