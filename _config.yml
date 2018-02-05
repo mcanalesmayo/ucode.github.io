@@ -1,8 +1,8 @@
 # Website settings
-title: "uCode 2018 | 9, 10 y 11 de marzo | EINA, Zaragoza"
+title: "uCode by adidas 2018 | 9, 10 y 11 de marzo | EINA, Zaragoza"
 logo_title: "uCode"
-description: "Hackathon uCode 9, 10 y 11 de marzo en la Escuela de Ingeniería y Arquitectura, Zaragoza"
-keywords: "uCode,hack,hacker,hackathon,hacking,EINA,Zaragoza"
+description: "Hackathon uCode by adidas 9, 10 y 11 de marzo en la Escuela de Ingeniería y Arquitectura, Zaragoza"
+keywords: "uCode,adidas,hack,hacker,hackathon,hacking,EINA,Zaragoza"
 baseurl: "/"
 url: "http://www.ucode.es"
 logo_small: "static/img/logo/ucode_abr.png"
