@@ -1,0 +1,7 @@
+- name: 'EINA'
+  img: 'static/img/organizers/eina.jpg'
+  link: 'https://eina.unizar.es/'
+
+- name: 'IEEE'
+  img: 'static/img/organizers/ieeesbuz.svg'
+  link: 'http://sites.ieee.org/sb-unizar/'
