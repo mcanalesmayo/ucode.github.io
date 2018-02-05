@@ -5,40 +5,17 @@
             <h1><span data-i18n="organizadores.title">Organizadores</span></h1>
         </div>
     </div>
-    {% for organizer in site.data.organizers %}
-    {% assign idx = forloop.index %}
-    {% assign idx0 = forloop.index0 %}
-    {% assign loopmod = idx0 | modulo: 4 %}
-    {% assign lastmod = forloop.length | modulo: 4 %}
-    {% if idx0 < 4 %}
-    {% if forloop.first == true %}
-    <div class="row m-b-xs">
-    {% elsif loopmod == 0 %}
-    </div><div class="row m-b-xs">
-    {% endif %}
-        {% assign higherthan = forloop.length | minus: lastmod | plus: 1 %}
-        {% if idx == higherthan %}
-        {% assign offsetlm = lastmod | times: 4 %}
-        {% assign offset = 12 | minus: offsetlm | divided_by: 2 %}
-        <div class="col-sm-offset-{{ offset }} col-sm-3">
-        {% else %}
-        <div class="col-sm-3">
-        {% endif %}
-            <a class="img-responsive" href="{{ organizer.link }}" target="_blank"><img src="{{ organizer.img | prepend: site.baseurl }}" class="img-responsive" alt="{{ organizer.name }}" style="margin-left: auto; margin-right: auto; max-height: 85px"></a>
-        </div>
-    {% if forloop.last == true %}
-    </div>
-    {% endif %}
-    {% else %}
     <div class="row">
-        <div class="col-sm-offset-4 col-sm-4">
-            <div class="row">
-                <div class="col-sm-offset-1 col-sm-10">
-                    <a class="img-responsive" href="{{ organizer.link }}" target="_blank"><img src="{{ organizer.img | prepend: site.baseurl }}" class="img-responsive" alt="{{ organizer.name }}" style="margin-left: auto; margin-right: auto; max-height: 85px"></a>
-                </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-4">
+                <a class="img-responsive" href="http://sites.ieee.org/sb-unizar/" target="_blank"><img src="static/img/organizers/ieeesbuz.svg" class="img-responsive" alt="IEEE Student Branch UZ" style="margin-left: auto; margin-right: auto; max-height: 85px"></a>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <a class="img-responsive" href="https://careers.adidas-group.com/" target="_blank"><img src="static/img/organizers/adidas_company_logo_PMS_424c.png" class="img-responsive" alt="adidas" style="margin-left: auto; margin-right: auto; max-height: 85px"></a>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <a class="img-responsive" href="https://eina.unizar.es/" target="_blank"><img src="static/img/organizers/eina.jpg" class="img-responsive" alt="EINA" style="margin-left: auto; margin-right: auto; max-height: 85px"></a>
             </div>
         </div>
     </div>
-    {% endif %}
-    {% endfor %}
 </div>

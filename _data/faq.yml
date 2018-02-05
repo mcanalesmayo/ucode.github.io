@@ -7,6 +7,9 @@ content:
       title: '¿Qué debo llevar?'
       answer: 'Sólo es necesario que traigas tu DNI o Pasaporte, tu portátil y el cargador. Si quieres ducharte, tráete también una toalla. De lo demás nos encargamos nosotros'
   - question:
+      title: '¿Dónde puedo dormir?'
+      answer: 'En las instalaciones del hackathon habilitaremos una zona de descanso con colchones'
+  - question:
       title: '¿Habrá reembolso del viaje si no soy de Zaragoza?'
       answer: 'Sí, hay un número limitado de becas para reembolsar el viaje. Para solicitarlo debes seguir las instrucciones indicadas <a href="/travel_reimbursement.html">aquí</a>'
   - question:
