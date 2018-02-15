@@ -1,8 +1,8 @@
 # Website settings
-title: "uCode EINA powered by adidas | 10, 11 y 12 de marzo | EINA, Zaragoza"
+title: "uCode by adidas 2018 | 9, 10 y 11 de marzo | EINA, Zaragoza"
 logo_title: "uCode"
-description: "Hackathon uCode EINA powered by adidas 10, 11 y 12 de marzo en la Escuela de Ingeniería y Arquitectura, Zaragoza"
-keywords: "uCode,hack,hacker,hackathon,hacking,EINA,Zaragoza,adidas"
+description: "Hackathon uCode by adidas 9, 10 y 11 de marzo en la Escuela de Ingeniería y Arquitectura, Zaragoza"
+keywords: "uCode,adidas,hack,hacker,hackathon,hacking,EINA,Zaragoza"
 baseurl: "/"
 url: "http://www.ucode.es"
 logo_small: "static/img/logo/ucode_abr.png"
@@ -29,16 +29,16 @@ sections:
     tpl: 'about.html'
     css: ''
 
+  - id: 'signup'
+    i18n: 'nav.signup'
+    name: 'Inscripción'
+    tpl: 'signup.html'
+    css: ''
+
   - id: 'faq'
     i18n: 'nav.faq'
     name: 'F.A.Q.'
     tpl: 'faq.html'
-    css: ''
-
-  - id: 'sponsors'
-    i18n: 'nav.sponsors'
-    name: 'Patrocinadores'
-    tpl: 'sponsors.html'
     css: ''
 
   - id: 'challenges'
@@ -47,17 +47,11 @@ sections:
     tpl: 'challenges.html'
     css: ''
 
-  - id: 'tournaments'
-    i18n: 'nav.tournaments'
-    name: 'Torneos'
-    tpl: 'tournaments.html'
-    css: ''
-
-  - id: 'resources'
-    i18n: 'nav.resources'
-    name: 'Recursos'
-    tpl: 'resources.html'
-    css: ''
+  # - id: 'tournaments'
+  #   i18n: 'nav.tournaments'
+  #   name: 'Torneos'
+  #   tpl: 'tournaments.html'
+  #   css: ''
 
   - id: 'timeline'
     i18n: 'nav.timeline'
@@ -65,23 +59,11 @@ sections:
     tpl: 'timeline.html'
     css: 'timeline'
 
-  - id: 'collaborators'
-    i18n: 'nav.collaborators'
-    name: 'Colaboradores'
-    tpl: 'collaborators.html'
-    css: ''
-
   - id: 'organizers'
     i18n: 'nav.organizers'
     name: 'Organizadores'
     tpl: 'organizers.html'
     css: ''
-
-#  - id: 'blog'
-#    i18n: 'nav.blog'
-#    name: 'Blog'
-#    tpl: 'blog.html'
-#    css: 'testimonials navy-section'
 
   - id: 'where'
     i18n: 'nav.where'
@@ -109,6 +91,6 @@ kramdown:
 
 google:
   analytics:
-    id: 'UA-87705893-1'
+    id: 'UA-113559866-1'
 
-eventbrite: 'https://www.eventbrite.com/e/registro-ucode-2016-w-29071122510'
+last_edition: 'http://2017.ucode.es'

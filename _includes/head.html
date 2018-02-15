@@ -116,8 +116,9 @@
 
   ga('create', '{{ site.google.analytics.id }}', 'auto');
   ga('send', 'pageview');
-
 </script>
+{% endif %}
+
 <script type="text/javascript">
   $(document).ready(function(){
     $(".newsletter_link").click(function(){
@@ -127,12 +128,11 @@
     });
   });
 </script>
-{% endif %}
-
+<!--<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us14.list-manage.com","uuid":"d764270e8f8d814577f0ef874","lid":"64ac182d46"}) })</script>-->
 <script type="text/javascript">
   $(document).ready(function(){
-    $(".register_link").click(function(){
-      window.open('{{ site.eventbrite }}','_blank');
+    $(".last_edition_link").click(function(){
+      window.open('{{ site.last_edition }}','_blank');
     });
   });
 </script>

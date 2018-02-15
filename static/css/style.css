@@ -6712,7 +6712,7 @@ body.landing-page {
   width: 100%;
 }
 .landing-page .header-back.one {
-  background-image: url('../img/landing/header_and_banner.png');
+  background-image: url('../img/landing/header.png');
   background-repeat:no-repeat;
   background-size:contain;
   background-position:center;

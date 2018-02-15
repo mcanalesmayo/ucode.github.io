@@ -2739,7 +2739,6 @@ a.forum-item-title:hover {
 .vertical-timeline-content {
   position: relative;
   margin-left: 60px;
-  background: white;
   border-radius: 0.25em;
   padding: 1em;
 }
@@ -2771,8 +2770,8 @@ a.forum-item-title:hover {
   right: 100%;
   height: 0;
   width: 0;
-  border: 7px solid transparent;
-  border-right: 7px solid white;
+  border: 0px solid transparent;
+  border-right: 0px solid white;
 }
 @media only screen and (min-width: 768px) {
   .vertical-timeline-content h2 {
@@ -2785,8 +2784,8 @@ a.forum-item-title:hover {
 @media only screen and (min-width: 1170px) {
   .center-orientation .vertical-timeline-content {
     margin-left: 0;
-    padding: 1.6em;
-    width: 45%;
+    padding: 0 0 3em;
+    width: 60%;
   }
   .center-orientation .vertical-timeline-content::before {
     top: 24px;
@@ -2800,26 +2799,26 @@ a.forum-item-title:hover {
   .center-orientation .vertical-timeline-content .vertical-date {
     position: absolute;
     width: 100%;
-    left: 122%;
+    left: 100%;
     top: 2px;
     font-size: 14px;
   }
-  .center-orientation .vertical-timeline-block:nth-child(even) .vertical-timeline-content {
+  .center-orientation .vertical-timeline-block .vertical-timeline-content {
     float: right;
   }
-  .center-orientation .vertical-timeline-block:nth-child(even) .vertical-timeline-content::before {
+  .center-orientation .vertical-timeline-block .vertical-timeline-content::before {
     top: 24px;
     left: auto;
     right: 100%;
     border-color: transparent;
     border-right-color: white;
   }
-  .center-orientation .vertical-timeline-block:nth-child(even) .vertical-timeline-content .btn {
+  .center-orientation .vertical-timeline-block .vertical-timeline-content .btn {
     float: right;
   }
-  .center-orientation .vertical-timeline-block:nth-child(even) .vertical-timeline-content .vertical-date {
+  .center-orientation .vertical-timeline-block .vertical-timeline-content .vertical-date {
     left: auto;
-    right: 122%;
+    right: 100%;
     text-align: right;
   }
   .center-orientation .cssanimations .vertical-timeline-content.is-hidden {
@@ -6571,6 +6570,14 @@ body.landing-page {
   color: #668cff;
   font-size: 13px;
 }
+.landing-page section#about p {
+  color: #668cff;
+  font-size: 16px;
+}
+.landing-page section#faq p {
+  color: #668cff;
+  font-size: 16px;
+}
 .landing-page address {
   font-size: 13px;
 }
@@ -6705,10 +6712,10 @@ body.landing-page {
   width: 100%;
 }
 .landing-page .header-back.one {
-  background: url('../img/landing/header_one.jpg') 50% 0 no-repeat;
-}
-.landing-page .header-back.two {
-  background: url('../img/landing/header_two.jpg') 50% 0 no-repeat;
+  background-image: url('../img/landing/header.png');
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;
 }
 .landing-page .carousel {
   height: 470px;
@@ -6830,7 +6837,7 @@ body.landing-page {
 }
 .landing-page .features h2 {
   font-size: 18px;
-  margin-top: 5px;
+  margin-top: 0px;
 }
 .landing-page .features-text-alone {
   margin: 40px 0;
@@ -6849,8 +6856,8 @@ body.landing-page {
   padding: 20px 0;
 }
 .landing-page .gray-section {
-  background: #f4f4f4;
-  margin-top: 60px;
+  background: #f5f5f5;
+  margin-top: 0px;
 }
 .landing-page .team-member {
   text-align: center;
@@ -6871,8 +6878,8 @@ body.landing-page {
   background: #003399;
 }
 .landing-page .img-small {
-  height: 88px;
-  width: 88px;
+  height: 150px;
+  width: 150px;
 }
 .landing-page .pricing-plan {
   margin: 20px 30px 0 30px;
@@ -7342,4 +7349,8 @@ body.rtls.top-navigation .footer.fixed {
 }
 .rtls #right-sidebar.sidebar-open {
   left: 0;
+}
+
+#i18_challenges p {
+  font-size: 18px;
 }
