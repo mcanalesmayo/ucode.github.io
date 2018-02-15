@@ -1,31 +1,24 @@
-<div class="container m-b-lg" id="i18_collaborators">
-    <div class="row">
-        <div class="col-xs-12 text-center" style="padding-top: 20px">
-            <button type="button" class="btn btn-primary btn-lg last_edition_link">
-                <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Ver edición 2017
-            </button>
-            <button type="button" class="btn btn-primary btn-lg newsletter_link">
-                <span class="glyphicon glyphicon-inbox" aria-hidden="true"></span> Newsletters
-            </button>
-        </div>
-    </div>
-    <div class="row m-b-sm">
-        <div class="col-xs-12 text-center">
+<div class="container" style="padding-bottom: 30px" id="i18_photos">
+    <div class="row m-b-lg">
+        <div class="col-lg-12 text-center">
             <div class="navy-line"></div>
-            <h1><span data-i18n="about.title">Qué es</span></h1>
+            <h1><span data-i18n="photos.title">Fotos 2017</span></h1>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-offset-3 col-xs-12 col-md-6">
-        {{ site.data.about.content }}
-        </div>
-        <br>
-        <div id="photos" class="row col-xs-12 shuffle photos-slick" style="margin: 10px">
+        <div id="photos" class="row shuffle photos-slick">
         {% for photo_idx in (site.data.photos.pictures.start..site.data.photos.pictures.end) %}
             <div class="col-xs-12 col-sm-4">
                 <img src="{{ site.data.photos.pictures.path }}/{{ photo_idx }}.{{ site.data.photos.pictures.format }}" class="img-responsive" style="margin-left: auto; margin-right: auto; max-height: 200px">
             </div>
         {% endfor %}
+        </div>
+        <br/>
+        <br/>
+        <div class="row">
+            <div class="col-xs-12 m-b-md">
+                <h1 style="text-align: center; font-size: 24px; color: #668cff">Plata</h1>
+            </div>
         </div>
     </div>
     <script type="text/javascript">
@@ -55,13 +48,13 @@
                 photos_div.css("top", "0px");
                 $('.photos-slick').slick({
                     slidesToScroll: 1,
-                    slidesToShow: 4,
+                    slidesToShow: 3,
                     dots: false,
                     arrows: false,
                     centerMode: false,
                     autoplay: true,
-                    autoplaySpeed: 4000,
-                    speed: 0,
+                    autoplaySpeed: 0,
+                    speed: 4000,
                     cssEase: 'linear',
                     pauseOnHover: true,
                     infinite: true
